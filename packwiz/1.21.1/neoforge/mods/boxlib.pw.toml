@@ -1,0 +1,13 @@
+name = "BoxLib"
+filename = "Boxlib-neoforge-14.4.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/HAE5KvTA/versions/Z4Rv1RQJ/Boxlib-neoforge-14.4.1.jar"
+hash-format = "sha512"
+hash = "20198cb51b7d14d806dbfec6a300f60215b2b78afe2e87eb8af8cf53dbf1af2c4a4bb46e78091ab4d3695951c32f28e956e08dd3534625836338d4003f8619cf"
+
+[update]
+[update.modrinth]
+mod-id = "HAE5KvTA"
+version = "Z4Rv1RQJ"

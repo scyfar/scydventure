@@ -1,0 +1,8 @@
+.gitignore
+.modlist.json
+config/fml.toml
+config/iris-excluded.json
+config/iris.properties
+config/neoforge-client.toml
+config/neoforge-common.toml
+config/neoforge-server.toml
