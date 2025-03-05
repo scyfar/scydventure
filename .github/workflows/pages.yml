@@ -33,7 +33,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: build book
-        run: mdbook build book
+        run: mdbook build docs
       - name: upload book files
         uses: actions/upload-pages-artifact@v3
         with:
