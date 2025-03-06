@@ -13,6 +13,7 @@ if len(sys.argv) != 3:
 
 source_dir = os.path.normpath(sys.argv[1])
 target_dir = os.path.normpath(sys.argv[2])
+root_dir = os.getcwd()
 
 # Check, if source directory exists
 if not Path(source_dir).exists():
@@ -33,12 +34,11 @@ name = config["name"]
 version = config["version"]
 
 # Export the mrpack file using packwiz
+os.chdir(source_dir)
 subprocess.run([
     "packwiz",
     "modrinth",
     "export",
-    "--pack-file",
-    f"{source_dir}/pack.toml",
     "--output",
-    f"{target_dir}/{name}-{version}.mrpack"
+    f"{root_dir}/{target_dir}/{name}-{version}.mrpack"
 ], check=True)

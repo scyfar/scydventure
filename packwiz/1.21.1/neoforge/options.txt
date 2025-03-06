@@ -1,5 +1,5 @@
 version:3955
-resourcePacks:["vanilla","fabric","mod_resources","continuity:default","continuity:glass_pane_culling_fix"]
+resourcePacks:["vanilla","fabric","mod_resources","continuity:default","continuity:glass_pane_culling_fix","mod/subtle_effects:resourcepacks/biome_color_water_particles"]
 soundCategory_extrasounds$master:1.0
 soundCategory_extrasounds$inventory:1.0
 soundCategory_extrasounds$action:1.0

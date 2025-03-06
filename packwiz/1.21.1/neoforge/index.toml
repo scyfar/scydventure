@@ -62,7 +62,7 @@ hash = "00267a602028cbb037dcb0b5f803db31bed284235ca9c1ea189ad4179311a2f4"
 
 [[files]]
 file = "config/debugkeybind.json"
-hash = "67fba4d47ccb84bd58cc807f659c30026a9faf3548baa3618925d68a08d838cb"
+hash = "2ad02c6ffdfe7807f56fcf31adf05eaf671e50e9426e7172b130475eb00029b3"
 
 [[files]]
 file = "config/doubledoors.json5"
@@ -110,7 +110,7 @@ hash = "1efbbe3d2bcae8b53d5d61596960703c047e9902a96eb46cf5214aeb68f093b6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "66410e9a07c1a1df780024e560e000c8f8050f8a394f29735f812f778f4e0826"
+hash = "f923b481b31056894d8a82929af9133bb2c1d3a4d016a8ba588448a2e503c3f6"
 
 [[files]]
 file = "config/immediatelyfast.json"
@@ -147,6 +147,10 @@ hash = "81b44ffe3ca548d4817c7aa8e7adaaa4b847bf126da36eb9215879f1d9d888e2"
 [[files]]
 file = "config/shulkerboxtooltip.json5"
 hash = "8f61a8c1718a5dad92a75f2eed05aa033eebb69d039138655d6bc2aa4649b6b3"
+
+[[files]]
+file = "config/skinlayers.json"
+hash = "6938dedbced0a6bb0ef345264f8df432b6db8b759f6614b32bae655ca72e131d"
 
 [[files]]
 file = "config/sodium-fingerprint.json"
@@ -201,6 +205,11 @@ file = "config/yacl.json5"
 hash = "d26a63d3cdf326412ba86dcc2781060bc53ed6c74ac7808e65325452e264e820"
 
 [[files]]
+file = "mods/3dskinlayers.pw.toml"
+hash = "8a9a92db01486e4f8d3a7370a6cbf6e59a12d1ef15c24b375ebce75500e78afc"
+metafile = true
+
+[[files]]
 file = "mods/actually-harvest.pw.toml"
 hash = "a24b95e4e5adaa390043930755c8c15dab6f962cacb19b45123e9c234c2d196b"
 metafile = true
@@ -221,6 +230,11 @@ hash = "178622c5b58b949428f417160bad79978e91b37978fd29099d442775b9a3e5fa"
 metafile = true
 
 [[files]]
+file = "mods/beautiful-enchanted-books-mod-edition.pw.toml"
+hash = "7909a9879af5aa2765debe229ed1f8531478e7a5c1dd719c9457f61bb968d436"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "93c4acd165a291c6d1e69c27b05b2747afc926b38a414712263fbc95f42da323"
 metafile = true
@@ -236,13 +250,18 @@ hash = "c9aca350959a8936b054c7164fb55d789ab1e0d38cff2af48b78f70af2bc0c6d"
 metafile = true
 
 [[files]]
+file = "mods/bow-infinity-fix.pw.toml"
+hash = "c5f74f27812ec843425b20e69cfb7d9b4b7784219078107a654540238f50470c"
+metafile = true
+
+[[files]]
 file = "mods/boxlib.pw.toml"
 hash = "0f5bb73add9a58f117d9468e25a2b695b3658bae549221f051d5c836ab71c23b"
 metafile = true
 
 [[files]]
 file = "mods/bridging-mod.pw.toml"
-hash = "0e809e68efa20f640b65d95632bc3dd649a79062cdcac41cfc1920bd5090d62f"
+hash = "c50696cd98b02ba03425574c7850443f5cba8e097af4b6ae1c8b42bd5316a8eb"
 metafile = true
 
 [[files]]
@@ -262,7 +281,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "874f578662fd07d02038e7d31e475ed9e1bbda2be31d5067cba21440289e68d8"
+hash = "e94bd41a54a72723e283df0c6a870c7baef0fa38ee9099842470f9fd10fc7e70"
 metafile = true
 
 [[files]]
@@ -322,7 +341,7 @@ metafile = true
 
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
-hash = "54943bb78f42b06ae8312e0cb4b1e97492e5e1407500d8495149f5b40205bda5"
+hash = "337eaef4f0cb6806463510c64a2de777a8a6c396d9855a26231d6a111caa05a2"
 metafile = true
 
 [[files]]
@@ -332,7 +351,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "7df9cfa47eeb1f996df4699e433e9a0be6c9bbed7a4743647cd745d7b87b694a"
+hash = "32ae660626d91a73a70a83d6c5be17fbb0b42e4f7e9bee694c5ee674aef97cd8"
 metafile = true
 
 [[files]]
@@ -442,4 +461,5 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "ceeb980b785661580c57995d18cfb5c6c605e654c24b18f672a17b4d247aaafb"
+hash = "9e3759271596e3f49e92a6b515abb37078910f9cb8daf328c4585618329e708b"
+preserve = true

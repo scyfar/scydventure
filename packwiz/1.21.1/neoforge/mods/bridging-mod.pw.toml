@@ -1,13 +1,13 @@
 name = "Bridging Mod"
-filename = "BridgingMod-2.6.1+1.21.1.neoforge-release.jar"
+filename = "BridgingMod-2.6.2+1.21.1.neoforge-release.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/lO3s8hjs/versions/fo1RzIjV/BridgingMod-2.6.1%2B1.21.1.neoforge-release.jar"
+url = "https://cdn.modrinth.com/data/lO3s8hjs/versions/GiR8tHNc/BridgingMod-2.6.2%2B1.21.1.neoforge-release.jar"
 hash-format = "sha512"
-hash = "2ed784443de48d7acf2c534171ef5ba6dfa332c3ace017c4023dd7d99e53ea13565fc23054a5c99c1b87bd6b999b867b2fb9fa8896c8360c5c47ef6e8325fc24"
+hash = "315129fd67381cfc799aa51fcd6ee511fdb6959a8b60f33afc9ea48c7cc13c689d6d56fcd2c793d8ce9ba95f7a37a5fe94c4422baa8c011592153ad2bd47dbd5"
 
 [update]
 [update.modrinth]
 mod-id = "lO3s8hjs"
-version = "fo1RzIjV"
+version = "GiR8tHNc"
