@@ -23,6 +23,8 @@ It has no specific topic and tries to make Minecraft more enjoyable but not over
 
 # Release
 
+The release unfortunately is not yet fully automated.
+
 An important note for releases is, that the leading information comes from the `pack.toml`.
 The `./scripts/release.py` automatically gathers the required information.
 
@@ -33,12 +35,38 @@ This modpack uses [`packwiz`][packwiz] to manage and export the files.
 > [NeoForge](https://neoforged.net/) mod loader only.
 > Other platforms and loaders _may_ follow. No promises though.
 
+1. Ensure the `./packwiz/[...]/[...]/.modlist.json` is up-to-date with the new versions entries
+2. Run the [attribution script](./scripts/attribution-data.py) and add the data to the
+   [docs](./docs/src/attribution.md)
+3. Run the [packwiz script to add mods](./scripts/packwiz-add-mods.py)
+   - Dependencies must be added to `.modlist.json`, so they should not be installed with `packwiz`
+4. Make manual changes, if necessary (e.g. set the `preserve` flag in `index.toml`)
+5. Run the [release script](./scripts/release.py)
+   - The `<new_version>` argument will be used as Git tag
+
+The `release.py` script is called with the `<new_version>` as only argument:
+
+```shell
+python ./scripts/release.py 0.1.0-alpha_1.21.1_neoforge
+```
+
+> [!NOTE]
+> The release type is determined from the Git tag name.
+>
+> - `draft` will cause the release to be marked as a draft and nothing will be uploaded to Modrinth.
+> - `alpha`, `beta` and `rc` will cause the release to be marked as pre-release and uploaded as
+>   with the respective type to Modrinth. `beta` and `rc` will both be considered a beta release.
+> - If no suffix exists, it is considered a regular release and will be also uploaded to Modrinth as
+>   such.
+
 # Scripts
+
+Scripts prefixed with `_` are used in automation scripts and should not be used manually.
 
 ## Add mods
 
 > [!CAUTION]
-> This script will delete all files in `<target>/mods`.
+> This script will delete all files in `<source>/mods`.
 
 Mods must be listed in a file named `.modlist.json` in the respective packwiz version directory.
 Each JSON object must have a key `url` with a valid URL to the mod or to a specific version at the
@@ -53,7 +81,7 @@ due to the other use in the `./scripts/attribution-data.py` script.
 > Therefore, this script requires manual intervention.
 
 The script `./scripts/packwiz-add-mods.py` will add the mods listed in the `.modlist.json` file.
-Use it like this:
+It requires the `<source>` as only argument:
 
 ```shell
 python ./scripts/packwiz-add-mods.py ./packwiz/1.21.1/neoforge/
@@ -62,7 +90,7 @@ python ./scripts/packwiz-add-mods.py ./packwiz/1.21.1/neoforge/
 ## Export mrpack
 
 The script `./scripts/export-mrpack.py` will export the version provided and create the
-`mrpack` in the target directory. Use it like this:
+`mrpack` in the target directory. It requires the `<source>` and `<target>` as arguments:
 
 ```shell
 python ./scripts/export-mrpack.py ./packwiz/1.21.1/neoforge/ ./target/
@@ -77,7 +105,7 @@ This table may not be completely filled, and certain fields can be substituted i
 This file must contain all mods including the dependencies for a complete list in the documentation.
 For details please see
 [the documentation](https://scyfar.github.io/scydventure/dev-notes.html#modlistjson).
-Use it like this:
+It requires the `<source>` as only argument:
 
 ```shell
 python ./scripts/attribution-data.py ./packwiz/1.21.1/neoforge/

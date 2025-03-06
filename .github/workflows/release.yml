@@ -1,0 +1,112 @@
+name: release and publish
+
+on:
+  push:
+    tags:
+      - "*"
+
+env:
+  ASSET_FILE_NAME_NO_EXT: "Scydventure-${{ github.ref_name }}"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      attestations: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: install Python requirements
+        run: pip install -r ./scripts/requirements.txt
+      - name: set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+      - name: install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+      - name: build artifact
+        run: python ./scripts/_export-mrpack.py "${{ github.ref_name }}" ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+      - name: attest build provenance
+        id: attest
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+      - name: zip attestation
+        run: |
+          zip ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip ${{ steps.attest.outputs.bundle-path }}
+      - name: upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-files
+          path: |
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: release-files
+      - name: create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: ${{ contains(github.ref_name, 'draft') }}
+          prerelease: ${{ !contains(github.ref_name, 'draft') && (contains(github.ref_name, 'alpha') || contains(github.ref_name, 'beta') || contains(github.ref_name, 'rc')) }}
+          generate_release_notes: true
+          files: |
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_RELEASE_PAT }}
+  publish:
+    if: ${{ contains(github.ref_name, 'draft') == false }}
+    runs-on: ubuntu-latest
+    needs: release
+    steps:
+      - name: extract data from tag
+        id: extract
+        env:
+          TAG_NAME: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          if [[ "$TAG_NAME" =~ ^([^_]*)_([^_]*)_([^_]*)$ ]]; then
+            echo "pack_version=${BASH_REMATCH[1]}" >> $GITHUB_OUTPUT
+            echo "mc_version=${BASH_REMATCH[2]}" >> $GITHUB_OUTPUT
+            echo "loader="{BASH_REMATCH[3]}" >> $GITHUB_OUTPUT
+          else
+            echo "Invalid Git tag format. Expected exactly two underscores."
+            exit 1
+          fi
+      - name: download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: release-files
+      - name: get release notes
+        id: release_notes
+        run: |
+          release_notes=$(gh release view "${{ github.ref_name }}" --json body --jq .body)
+          echo "release_notes=$release_notes" >> $GITHUB_OUTPUT
+      - name: publish to modrinth
+        uses: cloudnode-pro/modrinth-publish@v2
+        with:
+          token: ${{ secrets.MODRINTH_TOKEN }}
+          project: ${{ vars.MODRINTH_PROJECT_ID }}
+          version: ${{ github.ref_name }}
+          changelog: ${{ steps.release_notes.outputs.release_notes }}
+          loaders: |-
+            ${{ steps.extract.outputs.loader }}
+          game-versions: |-
+            ${{ steps.extract.outputs.mc_version }}
+          files: |
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+          primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+          dependencies: |-
+            [{"project_id": "HVnmMxH1", "dependency_type": "optional"}]
