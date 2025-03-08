@@ -73,3 +73,12 @@ automation/scripting.
 - It does not respect user edits on files
   - This is especially important to know then changing flags like the `preserve` setting in the
     [index.toml](https://packwiz.infra.link/reference/pack-format/index-toml/)
+
+## Release Action
+
+The automated release and publishing workflow is somewhat complicated due to the fact that I did
+not manage to get the proper trigger working. Usually I would've liked to use
+`on: { release: { types: [published] } }` but the asset data were not present.
+
+A workaround now is to have everything in one workflow, passing assets along and downloading the
+release notes with the GitHub CLI.

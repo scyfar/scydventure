@@ -70,6 +70,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: release
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: extract data from tag
         id: extract
         env:
@@ -79,17 +81,27 @@ jobs:
           if [[ "$TAG_NAME" =~ ^([^_]*)_([^_]*)_([^_]*)$ ]]; then
             echo "pack_version=${BASH_REMATCH[1]}" >> $GITHUB_OUTPUT
             echo "mc_version=${BASH_REMATCH[2]}" >> $GITHUB_OUTPUT
-            echo "loader="{BASH_REMATCH[3]}" >> $GITHUB_OUTPUT
+            echo "loader=${BASH_REMATCH[3]}" >> $GITHUB_OUTPUT
           else
             echo "Invalid Git tag format. Expected exactly two underscores."
             exit 1
           fi
+          if [[ "$TAG_NAME" == *"alpha"* ]]; then
+            channel="alpha"
+          elif [[ "$TAG_NAME" == *"beta"* ]] || [[ "$TAG_NAME" == *"rc"* ]]; then
+            channel="beta"
+          else
+            channel="release"
+          fi
+          echo "channel=${channel}" >> $GITHUB_OUTPUT
       - name: download artifacts
         uses: actions/download-artifact@v4
         with:
           name: release-files
       - name: get release notes
         id: release_notes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           release_notes=$(gh release view "${{ github.ref_name }}" --json body --jq .body)
           echo "release_notes=$release_notes" >> $GITHUB_OUTPUT
@@ -99,12 +111,13 @@ jobs:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: ${{ vars.MODRINTH_PROJECT_ID }}
           version: ${{ github.ref_name }}
+          channel: ${{ steps.extract.outputs.channel }}
           changelog: ${{ steps.release_notes.outputs.release_notes }}
           loaders: |-
             ${{ steps.extract.outputs.loader }}
           game-versions: |-
             ${{ steps.extract.outputs.mc_version }}
-          files: |
+          files: |-
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
             ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
           primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
