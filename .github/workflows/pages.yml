@@ -1,18 +1,12 @@
 name: build and deploy pages
 
 on:
-  # Run only on `main` branch
   push:
     branches: ["main"]
+    paths: ["docs/**"]
 
   # Allow manual runs
   workflow_dispatch:
-
-# Set permissions to allow to publish to Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 # Ensure only one build for Pages runs and do not cancel in-progress runs
 concurrency:
@@ -41,6 +35,9 @@ jobs:
           path: ./docs/book
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
