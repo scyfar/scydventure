@@ -10,7 +10,7 @@ Thanks to all Open Source project that are used to make this modpack.
 ## Mod list
 
 <details>
-<summary>0.0.1+1.21.1.neoforge</summary>
+<summary>0.0.1_1.21.1_neoforge</summary>
 
 Thank you for providing these awesome mods!
 

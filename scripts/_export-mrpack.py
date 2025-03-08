@@ -4,21 +4,27 @@ import subprocess
 import sys
 import toml
 
-# Check, if the source and target directories are provided
-# The `source` must be the path to the directory with the version, which should be exported
-# The `target` must be the directory where the `mrpack` should be created
+# Check, if the new version is provided
+# The `new_version` must follow the format of `<pack-version>_<minecraft-version>_<loader>`
 # An optional `file_name` can be provided
-if len(sys.argv) < 3:
-    print(f"Usage: python {os.path.basename(__file__)} <source> <target>")
+if len(sys.argv) < 2:
+    print(f"Usage: python {os.path.basename(__file__)} <new_version>")
     sys.exit(1)
 
-source_dir = os.path.normpath(sys.argv[1])
-target_dir = os.path.normpath(sys.argv[2])
-root_dir = os.getcwd()
+new_version = sys.argv[1].strip().lower()
+# Strip leading 'v'
+if new_version.startswith("v"):
+    new_version = new_version[1:]
+
+# Deconstruct the new_version
+pack_version, mc_version, loader = new_version.split("_")
+
+source_dir = os.path.normpath(f"./packwiz/{mc_version}/{loader}")
+target_dir = os.path.normpath(".")
 
 file_name = ""
-if len(sys.argv) == 4:
-    file_name = sys.argv[3].strip()
+if sys.argv[2]:
+    file_name = sys.argv[2].strip()
 
 # Check, if source directory exists
 if not Path(source_dir).exists():
@@ -48,5 +54,5 @@ subprocess.run([
     "modrinth",
     "export",
     "--output",
-    f"{root_dir}/{target_dir}/{file_name}"
+    f"../../../{target_dir}/{file_name}"
 ], check=True)

@@ -1,8 +1,25 @@
 # Development Notes
 
-## .modlist.json
+## Version
 
-This file is located in `.packwiz/${minecraft_version}/${modloader}`.
+The version is composed like this: `<pack_version>_<minecraft_version>_<loader>`.
+
+The `pack_version` follows the [semver](https://semver.org/) specification.
+Most commonly used extensions are:
+
+- `-draft`
+  - This will be marked as draft release on GitHub
+  - This will not be published on Modrinth
+- `-alpha`
+  - This will be marked as pre-release on GitHub
+  - This will be published to Modrinth on the alpha channel
+- `-beta` and `-rc.X`
+  - This will be marked as pre-release on GitHub
+  - This will be published to Modrinth on the beta channel
+
+## `.modlist.json`
+
+This file is located in `.packwiz/${minecraft_version}/${loader}`.
 
 It is used to keep track of all the mods, which are installed in the pack version.
 It is also the place where additional information about written permission for modpack usage are
@@ -45,3 +62,23 @@ such as Continuity.
 > [!NOTE]
 > The resource pack is enabled in the regular Minecraft options. Should an `options.txt` already
 > exist, it is left untouched. In this case the resource packs must be enabled manually.
+
+## `packwiz`
+
+While working reasonably well, it is definitely not made for power-users. And especially not for
+automation/scripting.
+
+- Dependencies are not properly detected
+- There is no "silent" option. It will always ask if dependencies should be installed
+- It does not respect user edits on files
+  - This is especially important to know then changing flags like the `preserve` setting in the
+    [index.toml](https://packwiz.infra.link/reference/pack-format/index-toml/)
+
+## Release Action
+
+The automated release and publishing workflow is somewhat complicated due to the fact that I did
+not manage to get the proper trigger working. Usually I would've liked to use
+`on: { release: { types: [published] } }` but the asset data were not present.
+
+A workaround now is to have everything in one workflow, passing assets along and downloading the
+release notes with the GitHub CLI.
