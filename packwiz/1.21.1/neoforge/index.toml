@@ -61,10 +61,6 @@ file = "config/continuity.json"
 hash = "00267a602028cbb037dcb0b5f803db31bed284235ca9c1ea189ad4179311a2f4"
 
 [[files]]
-file = "config/debugkeybind.json"
-hash = "2ad02c6ffdfe7807f56fcf31adf05eaf671e50e9426e7172b130475eb00029b3"
-
-[[files]]
 file = "config/doubledoors.json5"
 hash = "d4407793e6f0450c0b22eb5099f297e66ec947b666e8b5b1b7a15c87c1818cca"
 
