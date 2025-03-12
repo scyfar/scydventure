@@ -81,7 +81,6 @@ for mod_json in modlist_json:
         project_json["license"]["url"],
         mod_json["url"]
     )
-    notes_text = mod_json.get("notes", "")
     owner_text = mod_json.get("owner", "")
     if not owner_text:
         # Get the owner data
@@ -93,4 +92,4 @@ for mod_json in modlist_json:
         owner_text = get_owner_text(members_json)
 
     # Print out the Markdown table line
-    print(f"| {title_text} | {owner_text} | {license_text} | {notes_text} | ")
+    print(f"| {title_text} | {owner_text} | {license_text} |")

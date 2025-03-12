@@ -1,0 +1,13 @@
+name = "Brick Furnace"
+filename = "brickfurnace-neoforge-1.21.1-4.2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yzHyAUSI/versions/rBWW0jdO/brickfurnace-neoforge-1.21.1-4.2.0.0.jar"
+hash-format = "sha512"
+hash = "82749507977d0bfb476c883a797eff31122776751cbf64b83bd05b695704c53279ffd88746a24ca4b319a2c4314cf1d9cfeb35b2cf57f4908c439c63400deef0"
+
+[update]
+[update.modrinth]
+mod-id = "yzHyAUSI"
+version = "rBWW0jdO"

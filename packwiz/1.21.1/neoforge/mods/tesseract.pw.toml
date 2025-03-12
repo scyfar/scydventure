@@ -1,0 +1,13 @@
+name = "Tesseract"
+filename = "tesseract-1.0.37-neoforge-mc1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OUhp5O2m/versions/vO9U3AqU/tesseract-1.0.37-neoforge-mc1.21.jar"
+hash-format = "sha512"
+hash = "581241021fdd69efce1813329fb6d1e3fd3d9c6884e3f2027dd677fb8aad579e3e52a9fedf9a39a4dab271c24589dae4372e7c6a0803712187f8ba23445da75a"
+
+[update]
+[update.modrinth]
+mod-id = "OUhp5O2m"
+version = "vO9U3AqU"

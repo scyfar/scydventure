@@ -1,0 +1,13 @@
+name = "Dis-Enchanting Table"
+filename = "disenchanting_table-merged-1.21.1-3.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9BgYgXE4/versions/pljqngpo/disenchanting_table-merged-1.21.1-3.1.0.jar"
+hash-format = "sha512"
+hash = "e05d2791c39667ea32bce569c88817faa75478b1754439c2f144acd95ae574dc84c27a94ea53c76cd8a8beaa94105373fe71248a08e761dd5cbcf9b0cb69a2db"
+
+[update]
+[update.modrinth]
+mod-id = "9BgYgXE4"
+version = "pljqngpo"

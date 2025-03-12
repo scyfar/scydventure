@@ -40,9 +40,11 @@ This modpack uses [`packwiz`][packwiz] to manage and export the files.
    [docs](./docs/src/attribution.md)
 3. Run the [packwiz script to add mods](./scripts/packwiz-add-mods.py)
    - Dependencies must be added to `.modlist.json`, so they should not be installed with `packwiz`
+   - **This script deletes everything from the `mods` folder**
 4. Make manual changes, if necessary (e.g. set the `preserve` flag in `index.toml`)
 5. Run the [release script](./scripts/release.py)
    - The `<new_version>` argument will be used as Git tag
+6. Optional for local import: Run the [env change script](./scripts/client-env-required.py)
 
 The `release.py` script is called with the `<new_version>` as only argument:
 
@@ -95,6 +97,23 @@ The script `./scripts/export-mrpack.py` will export the version provided and cre
 ```shell
 python ./scripts/export-mrpack.py ./packwiz/1.21.1/neoforge/ ./target/
 ```
+
+`packwiz` will reprect the sidedness of the mod configuration and produce a proper `env` config
+in the modrinth JSON. This leads to an import issue, where sever sided mods will not be imported by
+the Modrinth App.
+
+To fix this, the script `./scripts/client-env-required.py` can be used to change all `env.client` to
+`required`. It requires the `<source>` and `<target>` as arguments:
+
+```shell
+python ./scripts/client-env-required.py ./target/filname.mrpack ./target/filename-required.mrpack`
+```
+
+The new `<target>` can be the same name and it will overwrite the old file.
+
+> [!NOTE]
+> The change to `required` is currently in line with the
+> [app export](https://github.com/modrinth/code/blob/827e3ec0a0a7149709df4d292add222c490e8318/packages/app-lib/src/api/profile/mod.rs#L860C1-L865C65).
 
 ## Attribution data
 

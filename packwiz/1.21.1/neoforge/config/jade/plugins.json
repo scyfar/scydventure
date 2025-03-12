@@ -1,4 +1,8 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true,
+    "framed_block_generic": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -52,6 +56,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "tesseract": {
+    "tesseract": true,
+    "remove_default": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
@@ -61,6 +69,9 @@
     "block": true,
     "entity": true,
     "entity_variant": true
+  },
+  "pipez": {
+    "pipe": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -72,5 +83,17 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "lootr": {
+    "info": true
+  },
+  "corpse": {
+    "corpse": true
+  },
+  "balm": {
+    "jade": true
   }
 }

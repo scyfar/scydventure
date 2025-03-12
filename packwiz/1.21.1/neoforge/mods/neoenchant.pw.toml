@@ -1,0 +1,13 @@
+name = "Neo Enchant+"
+filename = "neoenchant-5.9.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BynmO8IO/versions/ghQLQ5dW/neoenchant-5.9.3.jar"
+hash-format = "sha512"
+hash = "1af4864b7df13689e23378c704ff12ba71728b59f23874996488a85074f5449a118ae88ee85822ce2a157ab7319e136825be50b63f0adb406b7b7a31efab0ab4"
+
+[update]
+[update.modrinth]
+mod-id = "BynmO8IO"
+version = "ghQLQ5dW"

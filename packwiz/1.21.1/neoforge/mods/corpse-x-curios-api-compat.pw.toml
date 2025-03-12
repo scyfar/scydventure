@@ -1,0 +1,13 @@
+name = "Corpse x Curios API Compat"
+filename = "corpsecurioscompat-1.21.1-NeoForge-2.2.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/pJGcKPh1/versions/PyRcDdwZ/corpsecurioscompat-1.21.1-NeoForge-2.2.1.jar"
+hash-format = "sha512"
+hash = "4926d48ed7b2827d71bb8560e256497659113cc805d779b1b138d7594f0fcf654683abc7f5eb14fdf51551158e3e275d9a782bf509cb87fea0bcf7d06738301d"
+
+[update]
+[update.modrinth]
+mod-id = "pJGcKPh1"
+version = "PyRcDdwZ"

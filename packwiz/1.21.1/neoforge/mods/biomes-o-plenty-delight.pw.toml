@@ -1,0 +1,13 @@
+name = "Biomes O' Plenty Delight"
+filename = "biomesoplentydelight-1.0.1.4-1.21.x.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/umOrC1ZD/versions/Gvh2q0QB/biomesoplentydelight-1.0.1.4-1.21.x.jar"
+hash-format = "sha512"
+hash = "9b424c1a3bd6714cd2f3370e7fcbc350c1c64c3016a24e8d2dea99b44bc8f7e92e2a275352f09a25937323934627672f027f9b3ad4a49e0b218f9d480890043f"
+
+[update]
+[update.modrinth]
+mod-id = "umOrC1ZD"
+version = "Gvh2q0QB"

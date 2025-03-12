@@ -1,15 +1,3 @@
 version:3955
 resourcePacks:["vanilla","fabric","mod_resources","continuity:default","continuity:glass_pane_culling_fix","mod/subtle_effects:resourcepacks/biome_color_water_particles"]
-soundCategory_extrasounds$master:1.0
-soundCategory_extrasounds$inventory:1.0
-soundCategory_extrasounds$action:1.0
-soundCategory_extrasounds$chat:1.0
-soundCategory_extrasounds$chat_mention:1.0
-soundCategory_extrasounds$effects:1.0
-soundCategory_extrasounds$hotbar:0.0
-soundCategory_extrasounds$typing:0.0
-soundCategory_extrasounds$item_drop:1.0
-soundCategory_extrasounds$empty_hotbar:0.0
-soundCategory_extrasounds$enabled_footstep:1.0
-soundCategory_extrasounds$enabled_effects:1.0
-soundCategory_extrasounds$enabled_poof:1.0
+

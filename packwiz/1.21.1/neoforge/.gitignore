@@ -2,6 +2,8 @@ config/debugkeybind.json
 config/fml.toml
 config/iris-excluded.json
 config/iris.properties
+config/jei/world/
 config/neoforge-client.toml
 config/neoforge-common.toml
 config/neoforge-server.toml
+kubejs/**/jsconfig.json

@@ -1,0 +1,13 @@
+name = "Short Circuit"
+filename = "short_circuit-neoforge-1.21.1-1.0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5dUwdwpB/versions/7513Kasm/short_circuit-neoforge-1.21.1-1.0.5.jar"
+hash-format = "sha512"
+hash = "ca2ca7d544d687220b2ad261afb028537f3ef9a8755f2d9e9525d34609a32044a1056d24226aac989ed8f98cda626f4655371a681c759c9b79750c4e21d5da6f"
+
+[update]
+[update.modrinth]
+mod-id = "5dUwdwpB"
+version = "7513Kasm"

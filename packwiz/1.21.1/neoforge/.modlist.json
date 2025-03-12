@@ -1,7 +1,6 @@
 [
   {
-    "url": "https://modrinth.com/mod/appleskin",
-    "notes": "`You are welcome to add this mod to any modpack you'd like.`<br>[Source](https://modrinth.com/mod/appleskin)"
+    "url": "https://modrinth.com/mod/appleskin"
   },
   {
     "url": "https://modrinth.com/mod/architectury-api",
@@ -29,12 +28,6 @@
     "url": "https://modrinth.com/mod/dynamicsurroundingsfabric"
   },
   {
-    "url": "https://modrinth.com/mod/emi"
-  },
-  {
-    "url": "https://modrinth.com/mod/emi-ores"
-  },
-  {
     "url": "https://modrinth.com/mod/extrasoundsforge"
   },
   {
@@ -42,8 +35,7 @@
     "owner": "[Sinytra](https://modrinth.com/organization/sinytra)"
   },
   {
-    "url": "https://modrinth.com/mod/fzzy-config",
-    "notes": "`Permission is granted for Modpacks to include this software as long as the copy of this software in the pack is included via a manifest which would download this software from its respective CurseForge or Modrinth page.`<br>[Source](https://github.com/fzzyhmstrs/Timefall-Development-Licence-Modified/blob/c929dbf66f3342964d6ada66cb8eace8476f608e/TimefallDevelopmentLicense-Modified-1.3.txt#L31)"
+    "url": "https://modrinth.com/mod/fzzy-config"
   },
   {
     "url": "https://modrinth.com/mod/immediatelyfast"
@@ -52,8 +44,7 @@
     "url": "https://modrinth.com/mod/jade"
   },
   {
-    "url": "https://modrinth.com/mod/jade-addons-forge",
-    "notes": "`You are allowed to add this mod to your modpack, as long as the modpack is only published on CurseForge or Modrinth.`<br>[Source](https://modrinth.com/mod/jade-addons-forge)"
+    "url": "https://modrinth.com/mod/jade-addons-forge"
   },
   {
     "url": "https://modrinth.com/mod/kotlin-for-forge"
@@ -72,8 +63,7 @@
     "url": "https://modrinth.com/mod/reeses-sodium-options"
   },
   {
-    "url": "https://modrinth.com/mod/satisfying-buttons",
-    "notes": "License link in Modrinth is broken.<br>`Yes, of course! you can use this mod in your modpack without asking, as long as it's downloaded from the official Curseforge or Modrinth link.`<br>[Source](https://license.txni.dev/)"
+    "url": "https://modrinth.com/mod/satisfying-buttons"
   },
   {
     "url": "https://modrinth.com/mod/connector",
@@ -81,7 +71,6 @@
   },
   {
     "url": "https://modrinth.com/mod/sodium",
-    "notes": "`The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.`<br>[Source](https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md#changes-and-new-works-license)",
     "owner": "[CaffeineMC](https://modrinth.com/organization/caffeinemc)"
   },
   {
@@ -97,20 +86,16 @@
     "url": "https://modrinth.com/mod/sodium-options-mod-compat"
   },
   {
-    "url": "https://modrinth.com/mod/subtle-effects",
-    "notes": "`Use this mod in modpacks with credit and one or more links to any of the project pages`<br>[Source](https://modrinth.com/mod/subtle-effects)"
+    "url": "https://modrinth.com/mod/subtle-effects"
   },
   {
-    "url": "https://modrinth.com/mod/tiny-item-animations",
-    "notes": "`Feel free to use this in any modpack you wish.`<br>[Source](https://modrinth.com/mod/tiny-item-animations)"
+    "url": "https://modrinth.com/mod/tiny-item-animations"
   },
   {
-    "url": "https://modrinth.com/mod/collective",
-    "notes": "`You may freely use this mod in any modpack, as long as the download remains hosted within the Modrinth ecosystem.`<br>[Source](https://modrinth.com/mod/collective)"
+    "url": "https://modrinth.com/mod/collective"
   },
   {
-    "url": "https://modrinth.com/mod/double-doors",
-    "notes": "`You may freely use this mod in any modpack, as long as the download remains hosted within the Modrinth ecosystem.`<br>[Source](https://modrinth.com/mod/double-doors)"
+    "url": "https://modrinth.com/mod/double-doors"
   },
   {
     "url": "https://modrinth.com/mod/shulkerboxtooltip"
@@ -123,8 +108,7 @@
     "url": "https://modrinth.com/mod/actually-harvest"
   },
   {
-    "url": "https://modrinth.com/mod/better-advancements",
-    "notes": "`This means that you're free to pretty much do what you like with the the code or compiled binaries, including but not limited to: Put the code or compiled binaries into your modpack`<br>[Source](https://github.com/way2muchnoise/BetterAdvancements/blob/8668393ada27d47d77da0a335443b653b535aea8/LICENSE.md?plain=1#L6)"
+    "url": "https://modrinth.com/mod/better-advancements"
   },
   {
     "url": "https://modrinth.com/mod/controlling"
@@ -151,22 +135,252 @@
     "url": "https://modrinth.com/mod/betterdays"
   },
   {
-    "url": "https://modrinth.com/mod/areas"
-  },
-  {
-    "url": "https://modrinth.com/mod/random-village-names"
-  },
-  {
     "url": "https://modrinth.com/mod/villager-names-serilum"
   },
   {
-    "url": "https://modrinth.com/mod/3dskinlayers",
-    "notes": "`Permission is hereby granted, free of charge, to any person obtaining a copy of this software (in source or binary form) and associated documentation files (the \"Software\"), to use, modify and compile the Software, subject to the following conditions:`<br><br>`The Software may not be used to get a) a commercial advantage, or b) monetary compensation.`<br>[Source](https://github.com/tr7zw/3d-Skin-Layers/blob/1.17/LICENSE)"
+    "url": "https://modrinth.com/mod/3dskinlayers"
   },
   {
     "url": "https://modrinth.com/mod/beautiful-enchanted-books-mod-edition"
   },
   {
     "url": "https://modrinth.com/mod/bow-infinity-fix"
+  },
+  {
+    "url": "https://modrinth.com/mod/biomes-o-plenty"
+  },
+  {
+    "url": "https://modrinth.com/mod/terrablender"
+  },
+  {
+    "url": "https://modrinth.com/mod/glitchcore"
+  },
+  {
+    "url": "https://modrinth.com/mod/better-village",
+    "owner": "[JTorleon Studios Team](https://modrinth.com/organization/jtorleon_studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/library-ferret",
+    "owner": "[JTorleon Studios Team](https://modrinth.com/organization/jtorleon_studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/villages-and-pillages"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-api",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/formations-overworld"
+  },
+  {
+    "url": "https://modrinth.com/mod/formations"
+  },
+  {
+    "url": "https://modrinth.com/mod/formations-nether"
+  },
+  {
+    "url": "https://modrinth.com/mod/natures-compass"
+  },
+  {
+    "url": "https://modrinth.com/mod/explorers-compass"
+  },
+  {
+    "url": "https://modrinth.com/mod/deeperdarker"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-nether-fortresses",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-dungeons",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-mineshafts",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-strongholds",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-ocean-monuments",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-witch-huts",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-desert-temples",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-jungle-temples",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-better-end-island",
+    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
+  },
+  {
+    "url": "https://modrinth.com/mod/waystones"
+  },
+  {
+    "url": "https://modrinth.com/mod/balm"
+  },
+  {
+    "url": "https://modrinth.com/datapack/neoenchant"
+  },
+  {
+    "url": "https://modrinth.com/mod/advanced-netherite"
+  },
+  {
+    "url": "https://modrinth.com/mod/comforts"
+  },
+  {
+    "url": "https://modrinth.com/mod/magnum-torch"
+  },
+  {
+    "url": "https://modrinth.com/mod/corpse"
+  },
+  {
+    "url": "https://modrinth.com/mod/corpse-x-curios-api-compat"
+  },
+  {
+    "url": "https://modrinth.com/mod/curios"
+  },
+  {
+    "url": "https://modrinth.com/mod/lootr"
+  },
+  {
+    "url": "https://modrinth.com/mod/better-animations-collection"
+  },
+  {
+    "url": "https://modrinth.com/mod/not-enough-animations"
+  },
+  {
+    "url": "https://modrinth.com/mod/living-things"
+  },
+  {
+    "url": "https://modrinth.com/mod/sophisticated-backpacks"
+  },
+  {
+    "url": "https://modrinth.com/mod/sophisticated-core"
+  },
+  {
+    "url": "https://modrinth.com/mod/sophisticated-storage"
+  },
+  {
+    "url": "https://modrinth.com/mod/tiny-coal"
+  },
+  {
+    "url": "https://modrinth.com/mod/redstonepen"
+  },
+  {
+    "url": "https://modrinth.com/mod/short-circuit"
+  },
+  {
+    "url": "https://modrinth.com/mod/tesseract"
+  },
+  {
+    "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/farmers-delight"
+  },
+  {
+    "url": "https://modrinth.com/mod/more-delight"
+  },
+  {
+    "url": "https://modrinth.com/mod/biomes-o-plenty-delight",
+    "owner": "[SWUTM](https://modrinth.com/organization/swutm)"
+  },
+  {
+    "url": "https://modrinth.com/mod/framedblocks"
+  },
+  {
+    "url": "https://modrinth.com/mod/chunk-loaders"
+  },
+  {
+    "url": "https://modrinth.com/mod/pipez"
+  },
+  {
+    "url": "https://modrinth.com/mod/immersive-aircraft"
+  },
+  {
+    "url": "https://modrinth.com/mod/enchantment-descriptions"
+  },
+  {
+    "url": "https://modrinth.com/mod/bookshelf-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/prickle"
+  },
+  {
+    "url": "https://modrinth.com/mod/brick-furnace"
+  },
+  {
+    "url": "https://modrinth.com/mod/trash-cans"
+  },
+  {
+    "url": "https://modrinth.com/mod/trashslot"
+  },
+  {
+    "url": "https://modrinth.com/mod/kubejs",
+    "owner": "[KubeJS](https://modrinth.com/mod/kubejs)"
+  },
+  {
+    "url": "https://modrinth.com/mod/rhino",
+    "owner": "[KubeJS](https://modrinth.com/mod/kubejs)"
+  },
+  {
+    "url": "https://modrinth.com/mod/lootjs"
+  },
+  {
+    "url": "https://modrinth.com/mod/chipped",
+    "owner": "[Terrarium](https://modrinth.com/organization/terrarium)"
+  },
+  {
+    "url": "https://modrinth.com/mod/resourceful-lib",
+    "owner": "[Team Resourceful](https://modrinth.com/organization/team-resourceful)"
+  },
+  {
+    "url": "https://modrinth.com/mod/athena-ctm",
+    "owner": "[Terrarium](https://modrinth.com/organization/terrarium)"
+  },
+  {
+    "url": "https://modrinth.com/mod/dis-enchanting-table"
+  },
+  {
+    "url": "https://modrinth.com/mod/monolib"
+  },
+  {
+    "url": "https://modrinth.com/mod/crafting-tweaks"
+  },
+  {
+    "url": "https://modrinth.com/mod/jei"
+  },
+  {
+    "url": "https://modrinth.com/mod/just-enough-resources-jer"
+  },
+  {
+    "url": "https://modrinth.com/mod/justenoughbreeding"
+  },
+  {
+    "url": "https://modrinth.com/mod/legendary-tooltips"
+  },
+  {
+    "url": "https://modrinth.com/mod/iceberg"
+  },
+  {
+    "url": "https://modrinth.com/mod/prism-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/leaves-be-gone"
   }
 ]
