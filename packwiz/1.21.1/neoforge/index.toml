@@ -6,7 +6,7 @@ hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 
 [[files]]
 file = "config/actuallyharvest-common.toml"
-hash = "dea357ce8890e307dc7f6e99b6f8f33e2222fdc70a0b042834993230c65b4077"
+hash = "9b6f738557df6f8dc12fa1c5a172a853b0a67aa8bcbe290c5cffdf98e585d5a4"
 
 [[files]]
 file = "config/advancednetherite-client.toml"
@@ -70,7 +70,7 @@ hash = "3bedf4e1c213bf204faf5f56bdd22f2fa7b045cbcb3da2d6285a4bdb116aeb37"
 
 [[files]]
 file = "config/betterendisland-neoforge-1_21.toml"
-hash = "a648d1ae8dfaf09c65471667f29315b3f34a29c245db43bdb8fc3b3d3574b28b"
+hash = "9f967435aa86ab5959ee76a215cde5176bee106fae08df3b6e440c77a823867a"
 
 [[files]]
 file = "config/betterf3.toml"
@@ -134,7 +134,7 @@ hash = "d6b58f956e80e1db8b7907b34d4ff87f91e4464c1a757e1350ee74b187ca078c"
 
 [[files]]
 file = "config/bettervillage_1.properties"
-hash = "68e0b0432e41e1f20be0049fe2e371dbae10f22a7136d33f1f41f2ba996c5648"
+hash = "4eda4ee372c1089fbe96a245537339163ea323b98b64709a8402351037f92f2b"
 
 [[files]]
 file = "config/betterwitchhuts-neoforge-1_21.toml"
@@ -282,7 +282,7 @@ hash = "9442d025ed6d2cec08741f21e68bd1b0353f310f154699c6a2058da0a5d3b418"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "70b6825deffd271e281b77d28ff68c484e0863bf3a358717a2e34dc0a39ded5c"
+hash = "1cae3935a236b946f736667b712d6a2443140a281a5fb1f70c9deba5b8fdaf16"
 
 [[files]]
 file = "config/farmersdelight-client.toml"
@@ -382,7 +382,7 @@ hash = "220cd4393712532d315da2cdc8ba07800a0c04ff06af9e66e12537aa1c9238e6"
 
 [[files]]
 file = "config/libraryferret_1.properties"
-hash = "19fdf15c8385f570fc76e2490c5407d5a46e1eb352dbf993fe31fd18766c4a79"
+hash = "51a21279aa4983b95c37aeb94c14a3786d7ec0031f2fa395391d44cb8b9cf083"
 
 [[files]]
 file = "config/lithium.properties"
@@ -633,13 +633,17 @@ file = "kubejs/server_scripts/immersive_aircraft_weapons.js"
 hash = "4cf677a2b52a05b3e03dc6475c7a423b784f11fd84498307419e8643bfa128df"
 
 [[files]]
+file = "kubejs/server_scripts/neoenchant.js"
+hash = "6db84d8e5b9a6a211965a61a3a42b7b0a9aa215b295e1d21976bd887146c0359"
+
+[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "8a9a92db01486e4f8d3a7370a6cbf6e59a12d1ef15c24b375ebce75500e78afc"
 metafile = true
 
 [[files]]
 file = "mods/actually-harvest.pw.toml"
-hash = "a24b95e4e5adaa390043930755c8c15dab6f962cacb19b45123e9c234c2d196b"
+hash = "fe4807c480d2d752327ffbec194acadb8fad37b14d9183dc743dd4ef71f1d1ec"
 metafile = true
 
 [[files]]
@@ -730,6 +734,11 @@ metafile = true
 [[files]]
 file = "mods/bridging-mod.pw.toml"
 hash = "c50696cd98b02ba03425574c7850443f5cba8e097af4b6ae1c8b42bd5316a8eb"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
 metafile = true
 
 [[files]]
@@ -835,6 +844,11 @@ metafile = true
 [[files]]
 file = "mods/easy-magic.pw.toml"
 hash = "4485332b8ff7be999cc4142ecad55763acdb587df69f748170bf5644f72d5729"
+metafile = true
+
+[[files]]
+file = "mods/elytra-slot.pw.toml"
+hash = "9e2b351f3cabb1252259f5383e6f2fec3e3d90534dbecddef4ed183eba42f35a"
 metafile = true
 
 [[files]]
@@ -1034,7 +1048,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "38522ce848fa0ae112e3e5657384f3252c079caeed039d3b2b0daaf9cbdfc71e"
+hash = "5bb2bf8bfcd8a447dabbd4c00b6c4bc65db1f96b7018f1a0a1874f35f4fad765"
 metafile = true
 
 [[files]]
@@ -1199,7 +1213,7 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-better-end-island.pw.toml"
-hash = "dd107d6d7a3df330f3f37a60cc0bf258337d6f39406c01f455d86aee0080d7eb"
+hash = "902c397d5dfc69b497681ba71aa5b8a8a85479b1ccf25157867e4803c16dd65b"
 metafile = true
 
 [[files]]
