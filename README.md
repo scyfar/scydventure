@@ -9,6 +9,8 @@
 ---
 
 [GitHub repository](https://github.com/scyfar/scydventure)
+⏺
+[Modrinth](https://modrinth.com/modpack/scydventure)
 
 [![github.com - scydventure](https://img.shields.io/github/v/release/scyfar/scydventure?label=%20&logo=github)](https://github.com/scyfar/scydventure/releases/latest)
 
