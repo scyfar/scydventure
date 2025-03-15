@@ -88,13 +88,14 @@ The following steps must be performed to create a release.
    - It is used for the attribution data
    - It is used to add mods to the modpack
 
-2. Run the [attribution script](scripts/attribution-data.py) and add the data to the
-   [`ATTRIBUTION.md`](ATTRIBUTION.md)
-3. Run the [script to add mods](scripts/add-mods.py)
+2. Run the [script to add mods](scripts/add-mods.py)
 
    - **This script deletes everything from the `mods` folder**
    - Do not install dependencies with `packwiz`
      - Unfortunately, this is a manual task
+
+3. Run the [attribution script](scripts/attribution-data.py) and add the data to the
+   [`ATTRIBUTION.md`](ATTRIBUTION.md)
 
 4. Make manual changes to the modpack files, if necessary
 

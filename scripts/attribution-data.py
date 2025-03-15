@@ -6,6 +6,7 @@ import requests
 import subprocess
 import sys
 import tempfile
+import toml
 
 #! > This script requires internet access <
 #!   ====================================
@@ -22,29 +23,15 @@ import tempfile
 #! # Description
 #! The required `<source_directory>` will be used to get the `.modlist.json`.
 #!
-#! The script will print markdown table rows with the columns "mod title", "owner", "license" to the
-#! terminal.
+#! The script will print the configured Minecraft and NeoForge version from `pack.toml`.
+#! The script will print markdown table rows with the columns "mod title", "version", "owner" and
+#! "license" to the terminal.
 #!
 #! Caches the `licenses.json` in a local `tmp` directory. The `tmp` directory will be automatically
 #! removed with the next restart (on Linux).
 #!
 #! # References
 #! - https://docs.modrinth.com/api/
-
-# Verify required arguments
-if len(sys.argv) != 2:
-    print(f"Usage: python {os.path.basename(__file__)} <source_directory>")
-    sys.exit(1)
-
-source_dir = os.path.normpath(sys.argv[1])
-
-# Check, if source directory exists
-if not Path(source_dir).exists():
-    print(f"Error: Source directory '{source_dir}' does not exist.")
-    sys.exit(1)
-
-with open(f"{source_dir}/.modlist.json", "r") as f:
-    modlist_json = json.load(f)
 
 def do_request(url):
     response = requests.get(url)
@@ -88,6 +75,29 @@ def get_owner_text(members_json):
 
     return ""
 
+# Verify required arguments
+if len(sys.argv) != 2:
+    print(f"Usage: python {os.path.basename(__file__)} <source_directory>")
+    sys.exit(1)
+
+source_dir = os.path.normpath(sys.argv[1])
+
+# Check, if source directory exists
+if not Path(source_dir).exists():
+    print(f"Error: Source directory '{source_dir}' does not exist.")
+    sys.exit(1)
+
+with open(f"{source_dir}/pack.toml", "r") as f:
+    pack_config = toml.load(f)
+
+print(f"The [Minecraft](https://www.minecraft.net/en-us) version is `{pack_config.get('versions', {}).get('minecraft', '')}`.\\")
+print(f"The [NeoForge](https://neoforged.net/) version is `{pack_config.get('versions', {}).get('neoforge', '')}`.\n\n")
+print(f"| Mod | Version | Author | License |")
+print(f"| --- | ------- | ------ | ------- |")
+
+with open(f"{source_dir}/.modlist.json", "r") as f:
+    modlist_json = json.load(f)
+
 for mod_json in modlist_json:
     # Get the mod slug from the URL
     slug = urlparse(mod_json["url"].strip()).path.split("/")[2]
@@ -98,30 +108,39 @@ for mod_json in modlist_json:
         continue
 
     project_json = response.json()
-    title_text = f"[{project_json.get('title', mod_json['url'])}]({mod_json['url']})"
+    title_text = f"[{project_json.get('title', mod_json['url'])}]({mod_json['url']})".replace('|', '\|')
     license_text = get_license_text(
         project_json["license"]["id"].replace("LicenseRef-", ""),
         project_json["license"]["url"],
         mod_json["url"]
-    )
-    owner_text = mod_json.get("owner", "")
+    ).replace('|', '\|')
+    owner_text = mod_json.get("owner", "").replace('|', '\|')
     if not owner_text:
-        # Get the owner data
+        # Get the owner data from members
         response = do_request(f"https://api.modrinth.com/v2/project/{slug}/members")
-        if not response.status_code == 200:
-            continue
-
-        members_json = response.json()
-        owner_text = get_owner_text(members_json)
+        if response.status_code == 200:
+            members_json = response.json()
+            owner_text = get_owner_text(members_json).replace('|', '\|')
 
         if not owner_text:
-            # Try organization
+            # Get the owner data from the organization
             response = do_request(f"https://api.modrinth.com/v3/project/{slug}/organization")
-            if not response.status_code == 200:
-                continue
+            if response.status_code == 200:
+                organization_json = response.json()
+                owner_text = f"[{organization_json['name']}](https://modrinth.com/organization/{organization_json['slug']})".replace('|', '\|')
 
-            organization_json = response.json()
-            owner_text = f"[{organization_json['name']}](https://modrinth.com/organization/{organization_json['slug']})"
+    # Load the mod pw.toml file
+    version_text = ""
+    with open(f"{source_dir}/mods/{slug}.pw.toml", "r") as f:
+        mod_config = toml.load(f)
+
+    mod_version_id = mod_config.get("update", {}).get("modrinth", {}).get("version", "")
+    if mod_version_id:
+        # Get the version data
+        response = do_request(f"https://api.modrinth.com/v2/project/{slug}/version/{mod_version_id}")
+        if response.status_code == 200:
+            mod_version_json = response.json()
+            version_text = f"[{mod_version_json['name']}](https://modrinth.com/mod/{slug}/version/{mod_version_id})".replace('|', '\|')
 
     # Print out the Markdown table line
-    print(f"| {title_text} | {owner_text} | {license_text} |")
+    print(f"| {title_text} | {version_text} | {owner_text} | {license_text} |")
