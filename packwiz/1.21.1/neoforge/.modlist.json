@@ -1,16 +1,132 @@
 [
   {
+    "url": "https://modrinth.com/mod/3dskinlayers"
+  },
+  {
+    "url": "https://modrinth.com/mod/actually-harvest"
+  },
+  {
+    "url": "https://modrinth.com/mod/advanced-netherite"
+  },
+  {
     "url": "https://modrinth.com/mod/appleskin"
   },
   {
-    "url": "https://modrinth.com/mod/architectury-api",
-    "owner": "[architectury](https://modrinth.com/organization/architectury)"
+    "url": "https://modrinth.com/mod/architectury-api"
   },
   {
+    "url": "https://modrinth.com/mod/athena-ctm"
+  },
+  {
+    "url": "https://modrinth.com/mod/balm"
+  },
+  {
+    "url": "https://modrinth.com/mod/beautiful-enchanted-books-mod-edition"
+  },
+  {
+    "url": "https://modrinth.com/mod/better-advancements"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/puzzles-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/better-animations-collection"
+  },
+  {
+    "url": "https://modrinth.com/mod/betterdays"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/library-ferret"
+      }
+    ],
+    "url": "https://modrinth.com/mod/better-village"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/cloth-config"
+      }
+    ],
     "url": "https://modrinth.com/mod/betterf3"
   },
   {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/terrablender"
+      },
+      {
+        "url": "https://modrinth.com/mod/glitchcore"
+      }
+    ],
+    "url": "https://modrinth.com/mod/biomes-o-plenty"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/biomes-o-plenty"
+      },
+      {
+        "url": "https://modrinth.com/mod/farmers-delight"
+      }
+    ],
+    "url": "https://modrinth.com/mod/biomes-o-plenty-delight"
+  },
+  {
+    "url": "https://modrinth.com/mod/bookshelf-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/bow-infinity-fix"
+  },
+  {
     "url": "https://modrinth.com/mod/boxlib"
+  },
+  {
+    "url": "https://modrinth.com/mod/brick-furnace"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yacl"
+      }
+    ],
+    "url": "https://modrinth.com/mod/bridging-mod"
+  },
+  {
+    "url": "https://modrinth.com/mod/caelus"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/athena-ctm"
+      },
+      {
+        "url": "https://modrinth.com/mod/resourceful-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/chipped"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+      },
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/chunk-loaders"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/cloth-config"
+      }
+    ],
+    "url": "https://modrinth.com/mod/clientsort"
   },
   {
     "url": "https://modrinth.com/mod/cloth-config"
@@ -19,228 +135,29 @@
     "url": "https://modrinth.com/mod/clumps"
   },
   {
-    "url": "https://modrinth.com/mod/continuity"
-  },
-  {
-    "url": "https://modrinth.com/mod/debug-keybind"
-  },
-  {
-    "url": "https://modrinth.com/mod/dynamicsurroundingsfabric"
-  },
-  {
-    "url": "https://modrinth.com/mod/extrasoundsforge"
-  },
-  {
-    "url": "https://modrinth.com/mod/forgified-fabric-api",
-    "owner": "[Sinytra](https://modrinth.com/organization/sinytra)"
-  },
-  {
-    "url": "https://modrinth.com/mod/fzzy-config"
-  },
-  {
-    "url": "https://modrinth.com/mod/immediatelyfast"
-  },
-  {
-    "url": "https://modrinth.com/mod/jade"
-  },
-  {
-    "url": "https://modrinth.com/mod/jade-addons-forge"
-  },
-  {
-    "url": "https://modrinth.com/mod/kotlin-for-forge"
-  },
-  {
-    "url": "https://modrinth.com/mod/lithium",
-    "owner": "[CaffeineMC](https://modrinth.com/organization/caffeinemc)"
-  },
-  {
-    "url": "https://modrinth.com/mod/mouse-tweaks"
-  },
-  {
-    "url": "https://modrinth.com/mod/noisium"
-  },
-  {
-    "url": "https://modrinth.com/mod/reeses-sodium-options"
-  },
-  {
-    "url": "https://modrinth.com/mod/satisfying-buttons"
-  },
-  {
-    "url": "https://modrinth.com/mod/connector",
-    "owner": "[Sinytra](https://modrinth.com/organization/sinytra)"
-  },
-  {
-    "url": "https://modrinth.com/mod/sodium",
-    "owner": "[CaffeineMC](https://modrinth.com/organization/caffeinemc)"
-  },
-  {
-    "url": "https://modrinth.com/mod/sodium-dynamic-lights"
-  },
-  {
-    "url": "https://modrinth.com/mod/sodiumleafculling"
-  },
-  {
-    "url": "https://modrinth.com/mod/sodium-options-api"
-  },
-  {
-    "url": "https://modrinth.com/mod/sodium-options-mod-compat"
-  },
-  {
-    "url": "https://modrinth.com/mod/subtle-effects"
-  },
-  {
-    "url": "https://modrinth.com/mod/tiny-item-animations"
-  },
-  {
     "url": "https://modrinth.com/mod/collective"
-  },
-  {
-    "url": "https://modrinth.com/mod/double-doors"
-  },
-  {
-    "url": "https://modrinth.com/mod/shulkerboxtooltip"
-  },
-  {
-    "url": "https://modrinth.com/mod/clientsort",
-    "owner": "[TerminalMC](https://modrinth.com/organization/terminalmc)"
-  },
-  {
-    "url": "https://modrinth.com/mod/actually-harvest"
-  },
-  {
-    "url": "https://modrinth.com/mod/better-advancements"
-  },
-  {
-    "url": "https://modrinth.com/mod/controlling"
-  },
-  {
-    "url": "https://modrinth.com/mod/searchables"
-  },
-  {
-    "url": "https://modrinth.com/mod/easy-magic"
-  },
-  {
-    "url": "https://modrinth.com/mod/puzzles-lib"
-  },
-  {
-    "url": "https://modrinth.com/mod/easy-anvils"
-  },
-  {
-    "url": "https://modrinth.com/mod/bridging-mod"
-  },
-  {
-    "url": "https://modrinth.com/mod/yacl"
-  },
-  {
-    "url": "https://modrinth.com/mod/betterdays"
-  },
-  {
-    "url": "https://modrinth.com/mod/villager-names-serilum"
-  },
-  {
-    "url": "https://modrinth.com/mod/3dskinlayers"
-  },
-  {
-    "url": "https://modrinth.com/mod/beautiful-enchanted-books-mod-edition"
-  },
-  {
-    "url": "https://modrinth.com/mod/bow-infinity-fix"
-  },
-  {
-    "url": "https://modrinth.com/mod/biomes-o-plenty"
-  },
-  {
-    "url": "https://modrinth.com/mod/terrablender"
-  },
-  {
-    "url": "https://modrinth.com/mod/glitchcore"
-  },
-  {
-    "url": "https://modrinth.com/mod/better-village",
-    "owner": "[JTorleon Studios Team](https://modrinth.com/organization/jtorleon_studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/library-ferret",
-    "owner": "[JTorleon Studios Team](https://modrinth.com/organization/jtorleon_studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/villages-and-pillages"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-api",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/formations-overworld"
-  },
-  {
-    "url": "https://modrinth.com/mod/formations"
-  },
-  {
-    "url": "https://modrinth.com/mod/formations-nether"
-  },
-  {
-    "url": "https://modrinth.com/mod/natures-compass"
-  },
-  {
-    "url": "https://modrinth.com/mod/explorers-compass"
-  },
-  {
-    "url": "https://modrinth.com/mod/deeperdarker"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-nether-fortresses",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-dungeons",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-mineshafts",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-strongholds",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-ocean-monuments",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-witch-huts",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-desert-temples",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-jungle-temples",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/yungs-better-end-island",
-    "owner": "[Refresh Studios](https://modrinth.com/organization/refresh-studios)"
-  },
-  {
-    "url": "https://modrinth.com/mod/waystones"
-  },
-  {
-    "url": "https://modrinth.com/mod/balm"
-  },
-  {
-    "url": "https://modrinth.com/datapack/neoenchant"
-  },
-  {
-    "url": "https://modrinth.com/mod/advanced-netherite"
   },
   {
     "url": "https://modrinth.com/mod/comforts"
   },
   {
-    "url": "https://modrinth.com/mod/magnum-torch"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/forgified-fabric-api"
+      },
+      {
+        "url": "https://modrinth.com/mod/connector"
+      }
+    ],
+    "url": "https://modrinth.com/mod/continuity"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/searchables"
+      }
+    ],
+    "url": "https://modrinth.com/mod/controlling"
   },
   {
     "url": "https://modrinth.com/mod/corpse"
@@ -249,118 +166,156 @@
     "url": "https://modrinth.com/mod/corpse-x-curios-api-compat"
   },
   {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/balm"
+      }
+    ],
+    "url": "https://modrinth.com/mod/crafting-tweaks"
+  },
+  {
     "url": "https://modrinth.com/mod/curios"
   },
   {
-    "url": "https://modrinth.com/mod/lootr"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/boxlib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/debug-keybind"
   },
   {
-    "url": "https://modrinth.com/mod/better-animations-collection"
+    "url": "https://modrinth.com/mod/deeperdarker"
   },
   {
-    "url": "https://modrinth.com/mod/not-enough-animations"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/monolib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/dis-enchanting-table"
   },
   {
-    "url": "https://modrinth.com/mod/living-things"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/collective"
+      }
+    ],
+    "url": "https://modrinth.com/mod/double-doors"
   },
   {
-    "url": "https://modrinth.com/mod/sophisticated-backpacks"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/architectury-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/dynamicsurroundingsfabric"
   },
   {
-    "url": "https://modrinth.com/mod/sophisticated-core"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/puzzles-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/easy-anvils"
   },
   {
-    "url": "https://modrinth.com/mod/sophisticated-storage"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/puzzles-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/easy-magic"
   },
   {
-    "url": "https://modrinth.com/mod/tiny-coal"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/caelus"
+      }
+    ],
+    "url": "https://modrinth.com/mod/elytra-slot"
   },
   {
-    "url": "https://modrinth.com/mod/redstonepen"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/bookshelf-lib"
+      },
+      {
+        "url": "https://modrinth.com/mod/prickle"
+      }
+    ],
+    "url": "https://modrinth.com/mod/enchantment-descriptions"
   },
   {
-    "url": "https://modrinth.com/mod/short-circuit"
+    "url": "https://modrinth.com/mod/explorers-compass"
   },
   {
-    "url": "https://modrinth.com/mod/tesseract"
-  },
-  {
-    "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
-  },
-  {
-    "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+    "url": "https://modrinth.com/mod/extrasoundsforge"
   },
   {
     "url": "https://modrinth.com/mod/farmers-delight"
   },
   {
-    "url": "https://modrinth.com/mod/more-delight"
+    "url": "https://modrinth.com/mod/forgified-fabric-api"
   },
   {
-    "url": "https://modrinth.com/mod/biomes-o-plenty-delight",
-    "owner": "[SWUTM](https://modrinth.com/organization/swutm)"
+    "url": "https://modrinth.com/mod/formations"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/formations"
+      }
+    ],
+    "url": "https://modrinth.com/mod/formations-nether"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/formations"
+      }
+    ],
+    "url": "https://modrinth.com/mod/formations-overworld"
   },
   {
     "url": "https://modrinth.com/mod/framedblocks"
   },
   {
-    "url": "https://modrinth.com/mod/chunk-loaders"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/kotlin-for-forge"
+      }
+    ],
+    "url": "https://modrinth.com/mod/fzzy-config"
   },
   {
-    "url": "https://modrinth.com/mod/pipez"
+    "url": "https://modrinth.com/mod/glitchcore"
+  },
+  {
+    "url": "https://modrinth.com/mod/iceberg"
+  },
+  {
+    "url": "https://modrinth.com/mod/immediatelyfast"
   },
   {
     "url": "https://modrinth.com/mod/immersive-aircraft"
   },
   {
-    "url": "https://modrinth.com/mod/enchantment-descriptions"
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/sodium"
+      }
+    ],
+    "url": "https://modrinth.com/mod/iris"
   },
   {
-    "url": "https://modrinth.com/mod/bookshelf-lib"
+    "url": "https://modrinth.com/mod/jade"
   },
   {
-    "url": "https://modrinth.com/mod/prickle"
+    "url": "https://modrinth.com/mod/jade-addons-forge"
   },
   {
-    "url": "https://modrinth.com/mod/brick-furnace"
-  },
-  {
-    "url": "https://modrinth.com/mod/trash-cans"
-  },
-  {
-    "url": "https://modrinth.com/mod/trashslot"
-  },
-  {
-    "url": "https://modrinth.com/mod/kubejs",
-    "owner": "[KubeJS](https://modrinth.com/mod/kubejs)"
-  },
-  {
-    "url": "https://modrinth.com/mod/rhino",
-    "owner": "[KubeJS](https://modrinth.com/mod/kubejs)"
-  },
-  {
-    "url": "https://modrinth.com/mod/lootjs"
-  },
-  {
-    "url": "https://modrinth.com/mod/chipped",
-    "owner": "[Terrarium](https://modrinth.com/organization/terrarium)"
-  },
-  {
-    "url": "https://modrinth.com/mod/resourceful-lib",
-    "owner": "[Team Resourceful](https://modrinth.com/organization/team-resourceful)"
-  },
-  {
-    "url": "https://modrinth.com/mod/athena-ctm",
-    "owner": "[Terrarium](https://modrinth.com/organization/terrarium)"
-  },
-  {
-    "url": "https://modrinth.com/mod/dis-enchanting-table"
-  },
-  {
-    "url": "https://modrinth.com/mod/monolib"
-  },
-  {
-    "url": "https://modrinth.com/mod/crafting-tweaks"
+    "url": "https://modrinth.com/mod/justenoughbreeding"
   },
   {
     "url": "https://modrinth.com/mod/jei"
@@ -369,27 +324,338 @@
     "url": "https://modrinth.com/mod/just-enough-resources-jer"
   },
   {
-    "url": "https://modrinth.com/mod/justenoughbreeding"
+    "url": "https://modrinth.com/mod/kotlin-for-forge"
   },
   {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/rhino"
+      }
+    ],
+    "url": "https://modrinth.com/mod/kubejs"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/puzzles-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/leaves-be-gone"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/iceberg"
+      },
+      {
+        "url": "https://modrinth.com/mod/prism-lib"
+      }
+    ],
     "url": "https://modrinth.com/mod/legendary-tooltips"
   },
   {
-    "url": "https://modrinth.com/mod/iceberg"
+    "url": "https://modrinth.com/mod/library-ferret"
+  },
+  {
+    "url": "https://modrinth.com/mod/lithium"
+  },
+  {
+    "url": "https://modrinth.com/mod/living-things"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/kubejs"
+      }
+    ],
+    "url": "https://modrinth.com/mod/lootjs"
+  },
+  {
+    "url": "https://modrinth.com/mod/lootr"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/puzzles-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/magnum-torch"
+  },
+  {
+    "url": "https://modrinth.com/mod/monolib"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/farmers-delight"
+      }
+    ],
+    "url": "https://modrinth.com/mod/more-delight"
+  },
+  {
+    "url": "https://modrinth.com/mod/mouse-tweaks"
+  },
+  {
+    "url": "https://modrinth.com/mod/natures-compass"
+  },
+  {
+    "url": "https://modrinth.com/datapack/neoenchant"
+  },
+  {
+    "url": "https://modrinth.com/mod/noisium"
+  },
+  {
+    "url": "https://modrinth.com/mod/not-enough-animations"
+  },
+  {
+    "url": "https://modrinth.com/mod/pipez"
+  },
+  {
+    "url": "https://modrinth.com/mod/prickle"
   },
   {
     "url": "https://modrinth.com/mod/prism-lib"
   },
   {
-    "url": "https://modrinth.com/mod/leaves-be-gone"
+    "url": "https://modrinth.com/mod/puzzles-lib"
   },
   {
-    "url": "https://modrinth.com/mod/elytra-slot"
+    "url": "https://modrinth.com/mod/redstonepen"
   },
   {
-    "url": "https://modrinth.com/mod/caelus"
+    "url": "https://modrinth.com/mod/reeses-sodium-options"
   },
   {
-    "url": "https://modrinth.com/mod/iris"
+    "url": "https://modrinth.com/mod/resourceful-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/rhino"
+  },
+  {
+    "url": "https://modrinth.com/mod/satisfying-buttons"
+  },
+  {
+    "url": "https://modrinth.com/mod/searchables"
+  },
+  {
+    "url": "https://modrinth.com/mod/short-circuit"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/cloth-config"
+      }
+    ],
+    "url": "https://modrinth.com/mod/shulkerboxtooltip"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/forgified-fabric-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/connector"
+  },
+  {
+    "url": "https://modrinth.com/mod/sodium"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/sodium"
+      },
+      {
+        "url": "https://modrinth.com/mod/sodium-options-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/sodium-dynamic-lights"
+  },
+  {
+    "url": "https://modrinth.com/mod/sodiumleafculling"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/reeses-sodium-options"
+      }
+    ],
+    "url": "https://modrinth.com/mod/sodium-options-api"
+  },
+  {
+    "url": "https://modrinth.com/mod/sodium-options-mod-compat"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/sophisticated-core"
+      }
+    ],
+    "url": "https://modrinth.com/mod/sophisticated-backpacks"
+  },
+  {
+    "url": "https://modrinth.com/mod/sophisticated-core"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/sophisticated-core"
+      }
+    ],
+    "url": "https://modrinth.com/mod/sophisticated-storage"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/fzzy-config"
+      }
+    ],
+    "url": "https://modrinth.com/mod/subtle-effects"
+  },
+  {
+    "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+  },
+  {
+    "url": "https://modrinth.com/mod/terrablender"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+      },
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/tesseract"
+  },
+  {
+    "url": "https://modrinth.com/mod/tiny-coal"
+  },
+  {
+    "url": "https://modrinth.com/mod/tiny-item-animations"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+      },
+      {
+        "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+      }
+    ],
+    "url": "https://modrinth.com/mod/trash-cans"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/balm"
+      }
+    ],
+    "url": "https://modrinth.com/mod/trashslot"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/collective"
+      }
+    ],
+    "url": "https://modrinth.com/mod/villager-names-serilum"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/villages-and-pillages"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/balm"
+      }
+    ],
+    "url": "https://modrinth.com/mod/waystones"
+  },
+  {
+    "url": "https://modrinth.com/mod/yacl"
+  },
+  {
+    "url": "https://modrinth.com/mod/yungs-api"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-desert-temples"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-dungeons"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-end-island"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-jungle-temples"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-mineshafts"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-nether-fortresses"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-ocean-monuments"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-strongholds"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/yungs-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/yungs-better-witch-huts"
   }
 ]

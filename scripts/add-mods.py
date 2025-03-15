@@ -5,10 +5,34 @@ import subprocess
 import sys
 import shutil
 
-# Check, if the source directory is provided
-# The `source` must be the path to the directory with the version, which should have mods installed
+#! > This script requires internet access <
+#!   ====================================
+#!
+#! Add mods to the modpack using the `packwiz` tool.
+#!
+#! # Usage
+#! ```
+#! python add-mods.py <source_directory>
+#! ```
+#!
+#! # Description
+#! The required `<source_directory>` will be used to get the `.modlist.json` and where the modpack
+#! base directory is assumed.
+#!
+#! All entries in the `.modlist.json` are looped and the command below is executed with the `url`
+#! value of the entry.
+#!
+#! The `packwiz` command used is
+#! ```
+#! packwiz modrinth add <url> --pack-file "<source_directory>/pack.toml" --meta-folder-base <source_directory>
+#! ```
+#!
+#! # References
+#! - https://packwiz.infra.link/
+
+# Verify required arguments
 if len(sys.argv) != 2:
-    print(f"Usage: python {os.path.basename(__file__)} <source>")
+    print(f"Usage: python {os.path.basename(__file__)} <source_directory>")
     sys.exit(1)
 
 source_dir = os.path.normpath(sys.argv[1])

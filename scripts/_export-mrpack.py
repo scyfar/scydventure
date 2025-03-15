@@ -4,20 +4,54 @@ import subprocess
 import sys
 import toml
 
-# Check, if the new version is provided
-# The `new_version` must follow the format of `<pack-version>_<minecraft-version>_<loader>`
-# An optional `file_name` can be provided
+#! > This script should only be used for automation <
+#!   ==============================================
+#!
+#! Export the modpack files in the `mrpack` format using the `packwiz` tool.
+#!
+#! # Usage
+#! ```
+#! python _export-mrpack.py `<git_tag>` [`<file_name>`]
+#! ```
+#!
+#! # Description
+#! The required `<git_tag>` must match this template:
+#! `<pack-version>_<minecraft-version>_<loader-name>`.
+#! The optional `<file_name>` argument will be used instead of generating a name.
+#!
+#! The script uses the provided `git_tag` to find the files to export. The tool `packwiz` is used
+#! to create a `mrpack` file.
+#!
+#! The source files are expected to be in a directory matching the template
+#! `./packwiz/{<minecraft-version>}/{<loader-name>}`.
+#!
+#! The exported `mrpack` file will be placed in the directory the script was executed from (`.`).
+#!
+#! If no `<file_name>` was provided, the `mrpack` will be named matching the template
+#! `{name}-{version}.mrpack`. The values `name` and `version` are retrieved from
+#! `./packwiz/{<minecraft-version>}/{<loader-name>}/pack.toml`.
+#!
+#! The `packwiz` command used is
+#! ```
+#! packwiz modrinth export --output <file_name>
+#! ```
+#!
+#! # References
+#! - https://support.modrinth.com/en/articles/8802351-modrinth-modpack-format-mrpack
+#! - https://packwiz.infra.link/
+
+# Verify required arguments
 if len(sys.argv) < 2:
-    print(f"Usage: python {os.path.basename(__file__)} <new_version>")
+    print(f"Usage: python {os.path.basename(__file__)} <git_tag> [<file_name>]")
     sys.exit(1)
 
-new_version = sys.argv[1].strip().lower()
+git_tag = sys.argv[1].strip().lower()
 # Strip leading 'v'
-if new_version.startswith("v"):
-    new_version = new_version[1:]
+if git_tag.startswith("v"):
+    git_tag = git_tag[1:]
 
-# Deconstruct the new_version
-pack_version, mc_version, loader = new_version.split("_")
+# Deconstruct the git_tag
+pack_version, mc_version, loader = git_tag.split("_")
 
 source_dir = os.path.normpath(f"./packwiz/{mc_version}/{loader}")
 target_dir = os.path.normpath(".")
