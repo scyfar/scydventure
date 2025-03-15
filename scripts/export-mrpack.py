@@ -4,12 +4,36 @@ import subprocess
 import sys
 import toml
 
-# Check, if the source and target directories are provided
-# The `source` must be the path to the directory with the version, which should be exported
-# The `target` must be the directory where the `mrpack` should be created
-# An optional `file_name` can be provided
+#! Export the modpack files in the `mrpack` format using the `packwiz` tool.
+#!
+#! # Usage
+#! ```
+#! python export-mrpack.py `<source_directory>` `<target_directory>` [`<file_name>`]
+#! ```
+#!
+#! # Description
+#! The required `<source_directory>` will be used to get the modpack files from.
+#! The required `<target_directory>` will be used to store the exported file in.
+#! The optional `<file_name>` argument will be used instead of generating a name.
+#!
+#! The tool `packwiz` is used to create a `mrpack` file.
+#!
+#! If no `<file_name>` was provided, the `mrpack` will be named matching the template
+#! `{name}-{version}.mrpack`. The values `name` and `version` are retrieved from
+#! `<source_directory>/pack.toml`.
+#!
+#! The `packwiz` command used is
+#! ```
+#! packwiz modrinth export --output "<target_directory>/<file_name>"
+#! ```
+#!
+#! # References
+#! - https://support.modrinth.com/en/articles/8802351-modrinth-modpack-format-mrpack
+#! - https://packwiz.infra.link/
+
+# Verify required arguments
 if len(sys.argv) < 3:
-    print(f"Usage: python {os.path.basename(__file__)} <source> <target>")
+    print(f"Usage: python {os.path.basename(__file__)} <source_directory> <target_directory> [<file_name>]")
     sys.exit(1)
 
 source_dir = os.path.normpath(sys.argv[1])

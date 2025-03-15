@@ -1,11 +1,12 @@
 # Attribution
 
-Thanks to all Open Source project that are used to make this modpack.
+Thanks to all Open Source projects and their contributors which make it possible to create
+Scydventure.
 
 - [packwiz](https://github.com/packwiz/packwiz) for providing a CLI tool to create Modrinth archives
 - [Modrinth](https://modrinth.com/) for the ability to download and host mods and related data
-- And all mod developers who allow their mods to be used in modpacks.
-  - For a list of mods in the respective version of the modpack, please see below.
+- All mod developers who allow their mods to be used in modpacks.
+  - For a list of mods in the respective version of Scydventure, please see below.
 
 ## Mod list
 
@@ -14,10 +15,10 @@ All mods are exclusively obtained from [Modrinth](https://modrinth.com/).
 <details>
 <summary>0.0.1_1.21.1_neoforge</summary>
 
+Thank you for providing these awesome projects!
+
 The [NeoForge](https://neoforged.net/) version is `21.1.128`.\
 The [Minecraft](https://www.minecraft.net/en-us) version is `1.21.1`.
-
-Thank you for providing these awesome mods!
 
 | Mod                                                                                                       | Author                                                                      | License                                                                                                                                                    |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,8 +35,8 @@ Thank you for providing these awesome mods!
 | [Better Days](https://modrinth.com/mod/betterdays)                                                        | [wendall911](https://modrinth.com/user/wendall911)                          | [LGPL-3.0-or-later](https://github.com/wendall911/BetterDays/blob/1.19.2/LICENSE)                                                                          |
 | [Better Villages](https://modrinth.com/mod/better-village)                                                | [JTorleon Studios Team](https://modrinth.com/organization/jtorleon_studios) | [All-Rights-Reserved](https://raw.githubusercontent.com/jtorleon-studios-team/bettervillages/refs/heads/main/license.txt)                                  |
 | [BetterF3](https://modrinth.com/mod/betterf3)                                                             | [TreyRuffy](https://modrinth.com/user/TreyRuffy)                            | [MIT](https://spdx.org/licenses/MIT.html)                                                                                                                  |
-| [Biomes O' Plenty Delight](https://modrinth.com/mod/biomes-o-plenty-delight)                              | [SWUTM](https://modrinth.com/organization/swutm)                            | [MIT](https://spdx.org/licenses/MIT.html)                                                                                                                  |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty)                                              | [Forstride](https://modrinth.com/user/Forstride)                            | [All-Rights-Reserved](https://modrinth.com/mod/biomes-o-plenty)                                                                                            |
+| [Biomes O' Plenty Delight](https://modrinth.com/mod/biomes-o-plenty-delight)                              | [SWUTM](https://modrinth.com/organization/swutm)                            | [MIT](https://spdx.org/licenses/MIT.html)                                                                                                                  |
 | [Bookshelf](https://modrinth.com/mod/bookshelf-lib)                                                       | [Darkhax](https://modrinth.com/user/Darkhax)                                | [LGPL-2.1-only](https://spdx.org/licenses/LGPL-2.1-only.html)                                                                                              |
 | [Bow Infinity Fix](https://modrinth.com/mod/bow-infinity-fix)                                             | [Parker8283](https://modrinth.com/user/Parker8283)                          | [LGPL-3.0-only](https://spdx.org/licenses/LGPL-3.0-only.html)                                                                                              |
 | [BoxLib](https://modrinth.com/mod/boxlib)                                                                 | [Boxadactle](https://modrinth.com/user/Boxadactle)                          | [MIT](https://spdx.org/licenses/MIT.html)                                                                                                                  |

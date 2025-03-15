@@ -7,10 +7,33 @@ import subprocess
 import sys
 import tempfile
 
-# Check, if the source directory is provided
-# The `source` must be the path to the directory with the version, which should have mods installed
+#! > This script requires internet access <
+#!   ====================================
+#! - https://raw.githubusercontent.com/spdx/license-list-data/refs/heads/main/json/licenses.json
+#! - https://api.modrinth.com/
+#!
+#! Generate the attribution data for all used mods.
+#!
+#! # Usage
+#! ```
+#! python attribution-data.py `<source_directory>`
+#! ```
+#!
+#! # Description
+#! The required `<source_directory>` will be used to get the `.modlist.json`.
+#!
+#! The script will print markdown table rows with the columns "mod title", "owner", "license" to the
+#! terminal.
+#!
+#! Caches the `licenses.json` in a local `tmp` directory. The `tmp` directory will be automatically
+#! removed with the next restart (on Linux).
+#!
+#! # References
+#! - https://docs.modrinth.com/api/
+
+# Verify required arguments
 if len(sys.argv) != 2:
-    print(f"Usage: python {os.path.basename(__file__)} <source>")
+    print(f"Usage: python {os.path.basename(__file__)} <source_directory>")
     sys.exit(1)
 
 source_dir = os.path.normpath(sys.argv[1])

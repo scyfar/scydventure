@@ -6,15 +6,38 @@ import sys
 import tempfile
 import zipfile
 
-# Check, if the source and target directories are provided
-# The `source` must be the file path to the directory with the `mrpack`` file is located
-# The `target` must be the file path where the repacked `mrpack` should be created
-if len(sys.argv) < 3:
-    print(f"Usage: python {os.path.basename(__file__)} <source> <target>")
+#! Force the client side config to `required` in the `mrpack`.
+#!
+#! # Usage
+#! ```
+#! python client-env-required.py `<source_file>` [`<target_file>`]
+#! ```
+#!
+#! # Description
+#! The required `<source_file>` must point to the input `mrpack` file.
+#! The optional `<target_file>` argument will be used instead of overwriting the `<source_file>`.
+#!
+#! The `<source_file>` will be repacked with the client config set to `required` for all mods.
+#! This is currently necessary for the Modrinth app to also include server only mods on local
+#! installs.
+#!
+#! Unpacks the `<source_file>` in a local `tmp` directory. The `tmp` directory will be automatically
+#! removed with the next restart (on Linux).
+#!
+#! # References
+#! - https://github.com/scyfar/scydventure/discussions/25#discussion-8087151
+#! - https://github.com/modrinth/code/blob/827e3ec0a0a7149709df4d292add222c490e8318/packages/app-lib/src/api/profile/mod.rs#L860C1-L865C65
+
+# Verify required arguments
+if len(sys.argv) < 2:
+    print(f"Usage: python {os.path.basename(__file__)} <source_file> [<target_file>]")
     sys.exit(1)
 
 source_file = os.path.normpath(sys.argv[1])
-target_file = os.path.normpath(sys.argv[2])
+
+target_file = source_file
+if sys.argv[2]:
+    target_file = os.path.normpath(sys.argv[2])
 
 # Check, if source file exists
 if not Path(source_file).exists():
