@@ -111,6 +111,7 @@ jobs:
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: ${{ vars.MODRINTH_PROJECT_ID }}
+          name: "v${{ steps.extract.outputs.pack_version }} ⏺ ${{ steps.extract.outputs.mc_version }} ⏺ ${{ steps.extract.outputs.loader }}"
           version: ${{ github.ref_name }}
           channel: ${{ steps.extract.outputs.channel }}
           changelog: ${{ steps.release_notes.outputs.release_notes }}
