@@ -44,7 +44,9 @@ This modpack uses [`packwiz`][packwiz] to manage and export the files.
 4. Make manual changes, if necessary (e.g. set the `preserve` flag in `index.toml`)
 5. Run the [release script](./scripts/release.py)
    - The `<new_version>` argument will be used as Git tag
-6. Optional for local import: Run the [env change script](./scripts/client-env-required.py)
+6. Add information to the [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
+   on GitHub
+7. Optional for local import: Run the [env change script](./scripts/client-env-required.py)
 
 The `release.py` script is called with the `<new_version>` as only argument:
 

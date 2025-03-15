@@ -60,6 +60,7 @@ jobs:
           draft: ${{ contains(github.ref_name, 'draft') }}
           prerelease: ${{ !contains(github.ref_name, 'draft') && (contains(github.ref_name, 'alpha') || contains(github.ref_name, 'beta') || contains(github.ref_name, 'rc')) }}
           generate_release_notes: true
+          discussion_category_name: Versions
           files: |
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
             ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
