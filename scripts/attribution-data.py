@@ -114,5 +114,14 @@ for mod_json in modlist_json:
         members_json = response.json()
         owner_text = get_owner_text(members_json)
 
+        if not owner_text:
+            # Try organization
+            response = do_request(f"https://api.modrinth.com/v3/project/{slug}/organization")
+            if not response.status_code == 200:
+                continue
+
+            organization_json = response.json()
+            owner_text = f"[{organization_json['name']}](https://modrinth.com/organization/{organization_json['slug']})"
+
     # Print out the Markdown table line
     print(f"| {title_text} | {owner_text} | {license_text} |")
