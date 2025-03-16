@@ -8,12 +8,18 @@ mushroomSporeBiomes = [
 mushroomSporeDensity = 10
 fireflyBiomes = [
     "minecraft:swamp",
-    "minecraft:mangrove_swamp"
+    "minecraft:mangrove_swamp",
+    "biomesoplenty:bayou",
+    "biomesoplenty:marsh",
+    "biomesoplenty:wetland"
 ]
 fireflyDensity = 6
 pollenBiomes = [
     "minecraft:flower_forest",
-    "minecraft:sunflower_plains"
+    "minecraft:sunflower_plains",
+    "biomesoplenty:field",
+    "biomesoplenty:jacaranda_glade",
+    "biomesoplenty:lavender_field"
 ]
 pollenDensity = 50
 sculkDustBiomes = [
