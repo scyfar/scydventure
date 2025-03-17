@@ -1,4 +1,5 @@
 // https://github.com/Hardel-DW/NeoEnchant
+
 LootJS.lootTables((event) => {
   event.modifyLootTables(LootType.CHEST).createPool((pool) => {
     pool.when((c) => c.randomChance(0.05));

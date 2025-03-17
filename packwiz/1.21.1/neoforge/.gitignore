@@ -1,1 +1,4 @@
 kubejs/**/jsconfig.json
+kubejs/config/
+kubejs/data/
+kubejs/README.txt

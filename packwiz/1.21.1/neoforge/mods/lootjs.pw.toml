@@ -1,13 +1,13 @@
 name = "LootJS: KubeJS Addon"
-filename = "lootjs-neoforge-1.21.1-3.2.2.jar"
+filename = "lootjs-neoforge-1.21.1-3.4.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/fJFETWDN/versions/hUByDpdP/lootjs-neoforge-1.21.1-3.2.2.jar"
+url = "https://cdn.modrinth.com/data/fJFETWDN/versions/MO2OtUZQ/lootjs-neoforge-1.21.1-3.4.0.jar"
 hash-format = "sha512"
-hash = "fc67c48c9d24eebef8a35d329f8f5b26f082e874a1b1cb364339a83dd568f828287c37e0eda9a049df0edde4aec44ae90133defd2a9bf1c6ec76a131a498e53c"
+hash = "8de13c9b275779450e6d15f47da72d32c34caa273df878012f54bac1f5f03eb774547d7fe80d7ce6bb180bce36d5b2d0e1dfb0ff4967f87a5d114961e176c356"
 
 [update]
 [update.modrinth]
 mod-id = "fJFETWDN"
-version = "hUByDpdP"
+version = "MO2OtUZQ"
