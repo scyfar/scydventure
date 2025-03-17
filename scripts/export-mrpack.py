@@ -41,7 +41,7 @@ target_dir = os.path.normpath(sys.argv[2])
 root_dir = os.getcwd()
 
 file_name = ""
-if len(sys.argv) == 4:
+if len(sys.argv) > 3:
     file_name = sys.argv[3].strip()
 
 # Check, if source directory exists

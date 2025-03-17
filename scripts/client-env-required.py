@@ -36,7 +36,7 @@ if len(sys.argv) < 2:
 source_file = os.path.normpath(sys.argv[1])
 
 target_file = source_file
-if sys.argv[2]:
+if len(sys.argv) > 2:
     target_file = os.path.normpath(sys.argv[2])
 
 # Check, if source file exists

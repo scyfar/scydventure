@@ -57,7 +57,7 @@ source_dir = os.path.normpath(f"./packwiz/{mc_version}/{loader}")
 target_dir = os.path.normpath(".")
 
 file_name = ""
-if sys.argv[2]:
+if len(sys.argv) > 2:
     file_name = sys.argv[2].strip()
 
 # Check, if source directory exists
