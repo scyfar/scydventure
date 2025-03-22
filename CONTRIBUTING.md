@@ -119,9 +119,9 @@ The following steps must be performed to create a release.
    - The `<new_draft_version>` is the version that will be set for the next iteration and is usually
      a `-draft` version
 
-7. Add information to the
+7. Add a link to the
    [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
-   on GitHub
+   on Modrinth to [the version](https://modrinth.com/modpack/scydventure/versions)
 
 > [!NOTE]
 > The release type is determined from the Git tag name.
