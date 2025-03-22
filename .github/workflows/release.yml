@@ -99,12 +99,14 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: release-files
+      - name: set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
       - name: get release notes
         id: release_notes
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |-
-          release_notes=$(gh release view "${{ github.ref_name }}" --json body --jq .body)
+          release_notes=$(python ./scripts/_extract-changelog.py "${{ github.ref_name }}")
           echo "release_notes<<EOF" >> $GITHUB_OUTPUT
           echo "$release_notes" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -113,7 +115,7 @@ jobs:
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: ${{ vars.MODRINTH_PROJECT_ID }}
-          name: "v${{ steps.extract.outputs.pack_version }} ⏺ ${{ steps.extract.outputs.mc_version }} ⏺ ${{ steps.extract.outputs.loader }}"
+          name: "${{ steps.extract.outputs.pack_version }} ⏺ ${{ steps.extract.outputs.mc_version }} ⏺ ${{ steps.extract.outputs.loader }}"
           version: ${{ github.ref_name }}
           channel: ${{ steps.extract.outputs.channel }}
           changelog: ${{ steps.release_notes.outputs.release_notes }}
