@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="512" height="512" src="https://cdn.modrinth.com/data/kOyOts0j/images/4686fbea81a80b266c975f509332cfb3e5f6dbac.webp" alt="DALL·E generated Scydventure landscape in Minecraft style" />
+<img width="512" height="512" src="assets/scydventure-full.webp" alt="DALL·E generated Scydventure landscape in Minecraft style" />
 
 # Scydventure ⛏🛡🪄
 
