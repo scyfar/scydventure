@@ -112,7 +112,7 @@ if new_draft_version:
 
     # Git add & commit
     subprocess.run(["git", "-C", source_dir, "add", "pack.toml"], cwd=root_dir, check=True)
-    commit_message = f"chore(release): prepare for new development iteration ({new_draft_version})"
+    commit_message = f"chore(release): prepare for new development iteration"
     subprocess.run(
         ["git", "commit", "-m", commit_message],
         cwd=root_dir,
