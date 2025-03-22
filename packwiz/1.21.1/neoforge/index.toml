@@ -78,7 +78,7 @@ hash = "32701692ec2ede22f3aef544cf75db3b611ce15c52188b74d886ce1c459be58e"
 
 [[files]]
 file = "config/notenoughanimations.json"
-hash = "3943a9c6a50d0e66aed029db43a467603e6f300c8165d5f5e8bf5892144c0f74"
+hash = "e2cd3d077a94a4000fda2300c3521fa283462bc9f1628caa453828d47345e4b3"
 
 [[files]]
 file = "config/satisfying_buttons-client.toml"
@@ -90,19 +90,19 @@ hash = "001e45df23122651b3645821df31cf3ada9de4fa1bf8a75c377d45169c124fb2"
 
 [[files]]
 file = "config/sophisticatedbackpacks-server.toml"
-hash = "b72f3721aeedff673ae6ea46518aad94e7a7ac35e81adf2b20e31871e8971767"
+hash = "aac7a874c3e7a7493c82f14b250ec0bd5b44c7a9d3147663ca9c77a7058bbd6e"
 
 [[files]]
 file = "config/sophisticatedstorage-client.toml"
-hash = "9f13bcf4fc31f0529746e46c3fb70c56bf7d5521032f7fa85c7c6e720a850722"
+hash = "234befbcbc8799cd14b76985dc756e02317e0fe9e61db6d8ee2ccd946788818c"
 
 [[files]]
 file = "config/subtle_effects/biomes.toml"
-hash = "2e1a7c663cc1131d23346a8db2b3d1059985020ce7d71b7eece89acf61974a16"
+hash = "acae6b6aa8df9f4f2b09c84bb37c6e99d49cf73a38900e28c4835f71a8247b9c"
 
 [[files]]
 file = "config/subtle_effects/blocks.toml"
-hash = "94ebc0c68b95a493816f6ddd05c3ddf98e59da9b0b41aa93336fc685be9de1ee"
+hash = "138ff4e23abe6bdd10f7567913022ea3b04a527dd0817b90b7501a93ae44402d"
 
 [[files]]
 file = "config/subtle_effects/entities.toml"
@@ -125,16 +125,64 @@ file = "config/waystones-common.toml"
 hash = "d35989de1930dee65145b79e1a1567f00b01e3f43fd392650b9a87fa48bdaaef"
 
 [[files]]
+file = "kubejs/assets/kubejs/lang/de_de.json"
+hash = "b9a0e9c4e2817cc68c430445c7d9ddc930e02303777083ef91481e8cc912b395"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "c056ccca4c8bb978f9972b9514ad717fa5bd1ad43c548555c85787f238d2afb3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/dark_netherite_upgrade_smithing_template.png"
+hash = "b616cfeee4f9595a0b66b72f0cc06df62d06b382afe52582b73a62d828148a2d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/resonarium_smithing_template.png"
+hash = "383755951778e6a8d42a417dd8458419b03e6d2827f86e167fbeb2bd8732977c"
+
+[[files]]
+file = "kubejs/client_scripts/main.js"
+hash = "fede78032fd82e10246d8b75e4733d18029d80ca89054d1ce499a899288be921"
+
+[[files]]
+file = "kubejs/server_scripts/add_neoenchant_loot.js"
+hash = "30a13d7fe726c4296344654c04e25ac0b866b284d71a7517f64d67096ef378cd"
+
+[[files]]
+file = "kubejs/server_scripts/advanced_netherite_deeper_darker.js"
+hash = "3b735c6ee4d72046e82f5e20f5100cec04512ad854b20200fceb4a8d712ae3ef"
+
+[[files]]
 file = "kubejs/server_scripts/change_brick_furnace_recipes.js"
-hash = "a84567202548253a4d2805e92a486a23a2ef176476b647e868ae42f275b8d06d"
+hash = "e1d4b12ee561ddeb23d3873c08f48410e437bc76058cbd0f6e6cae574124d098"
 
 [[files]]
-file = "kubejs/server_scripts/immersive_aircraft_weapons.js"
-hash = "4cf677a2b52a05b3e03dc6475c7a423b784f11fd84498307419e8643bfa128df"
+file = "kubejs/server_scripts/change_dis-enchanting_recipe.js"
+hash = "9d03fa897cce1d9828341420da5fb2192d98dc2ba682424de4009b9ab0030698"
 
 [[files]]
-file = "kubejs/server_scripts/neoenchant.js"
-hash = "6598fcdd1d14f882f68bc215082b36492ac623a757d9d2d1cf10263bf78ee6a5"
+file = "kubejs/server_scripts/fix_deeper_darker_resonarium.js"
+hash = "0176c267f0ec3a7d80cdc8d99921bfcaaefb829bcb9206e8838fbc853e978658"
+
+[[files]]
+file = "kubejs/server_scripts/remove_immersive_aircraft_weapons.js"
+hash = "68b93b9549aef3fb7061e0840bbd4da5efbd0fd81ba80bb833f4e0c7140ef38e"
+
+[[files]]
+file = "kubejs/server_scripts/remove_pipez_energy_gar.js"
+hash = "e549f9d55f75fb28194d3d98c74f5a48a8d4f0933ba4b10cd4c15d9adef18eed"
+
+[[files]]
+file = "kubejs/server_scripts/resonarium_smithing_template.js"
+hash = "0ac08cfd101b20458f73e665943bcc783341c4eed880728b781493faf904ae96"
+
+[[files]]
+file = "kubejs/startup_scripts/advanced_netherite_deeper_darker.js"
+hash = "2971ad341b62b97b725b619390f8400e7e02955e1773adc86563acfe3bad62d6"
+
+[[files]]
+file = "kubejs/startup_scripts/resonarium_smithing_template.js"
+hash = "81de133fd0b7618ada9b73d63d7d313f868d5461f0cbd716bd784509f2d977a3"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -168,7 +216,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "268f35112d9b1637f9d5e7beea999d9dbda8ae746d1d98fb2cd8e23c5f5ac98f"
+hash = "99d1d50b9b78d59d02aaae4bbc345d2e2982ca967d18755b6d086b5f8fedd77a"
 metafile = true
 
 [[files]]
@@ -188,7 +236,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-village.pw.toml"
-hash = "d9ddc31ce048892b985873121a1ad392afcd391f43a9b9df9f1de1c0fb2bd6f4"
+hash = "528153829c3c3f7d5f4cab313bb0ddd0755779dbce26d4c7080d2ab5754b1ca8"
 metafile = true
 
 [[files]]
@@ -398,7 +446,7 @@ metafile = true
 
 [[files]]
 file = "mods/fzzy-config.pw.toml"
-hash = "b15c066e6dda1857e2f7fb6e1f724a9fc95c2d222122500c14ccd987d4ea24fd"
+hash = "14f2789a95bc3f1a37271ed91cd6ab931c6ba22b62d0fa5f429777aabe411053"
 metafile = true
 
 [[files]]
@@ -413,12 +461,12 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "e27bf546182fc60c59cd535f0bd54c4f1aefd6a99db6ce49b9ca22bfd14c2b63"
+hash = "e39fea44e8f1b91ef0825d7ddfe1b5da7173439c1b23a4291c46542d2c39330c"
 metafile = true
 
 [[files]]
 file = "mods/immersive-aircraft.pw.toml"
-hash = "8da78a0ede953607199bdb40864ac978a9d28be418a5b60037d6b3f91ba59d13"
+hash = "4671a699d5d182d4ac4ddaa4185bd953aeae56f1685491715ed3e2ccc86f1631"
 metafile = true
 
 [[files]]
@@ -428,7 +476,7 @@ metafile = true
 
 [[files]]
 file = "mods/jade-addons-forge.pw.toml"
-hash = "3272f1c8e94191a33400bf0b790bf50a3cac71b6029db3344ddcf9cc5a85631b"
+hash = "8cd8400cb4e2c5ba60c8a359a7b6ff501078d2056eab0aba7f6b0ac77b7a0694"
 metafile = true
 
 [[files]]
@@ -488,7 +536,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootjs.pw.toml"
-hash = "d70b7c143d445ae9fa741545cfa4b7d032e34083f3a6c721bc7d39487d87b7fe"
+hash = "771a5c436b7268c0c3f1a2dfcb804f317ca70577202973ddc4bce2b4704845b6"
 metafile = true
 
 [[files]]
@@ -553,7 +601,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "5bb2bf8bfcd8a447dabbd4c00b6c4bc65db1f96b7018f1a0a1874f35f4fad765"
+hash = "35ecf5a8ecf2d7b1a2b79f5d24a093e21d23f12486dcd71689894758d2fbe832"
 metafile = true
 
 [[files]]
@@ -628,7 +676,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "be7fdf2c6663446895d6424d9854edc944f27e9ead91afe0cb1d1d8c70f365b5"
+hash = "1f16e313b26943798db29ff44ada73cc4a519c0dedd623fa11789d396fcf21b0"
 metafile = true
 
 [[files]]
@@ -638,7 +686,7 @@ metafile = true
 
 [[files]]
 file = "mods/subtle-effects.pw.toml"
-hash = "4f6cef1f0ab7e73e97242ee3eae06ed848208dde6eb3e61f4deede8ba32daf08"
+hash = "009bc56b80f441705cbc9fdc52c6b5a9da166e57172d4ac56df3c1ac28715085"
 metafile = true
 
 [[files]]
@@ -678,7 +726,7 @@ metafile = true
 
 [[files]]
 file = "mods/trashslot.pw.toml"
-hash = "1ea93119aea75c88b41e9a45ce392b763a68444a29b245221165494e25387bb0"
+hash = "b7edb8bf6ab6913509a777faa013241784c3a75a966a1c62e4ddd786ecd2392f"
 metafile = true
 
 [[files]]
@@ -693,12 +741,12 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "dd86bef89575399c56520bc4d12a6bc3af2a9ddc7eca18eecde0da70cf494e0f"
+hash = "0b7e4f9e76ad96ec2f59e05c3b72909960bd22ea8ff97178e6a9293760d003c7"
 metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "9de861902c7a3f7cc88f51a920bbf93be84f2beca2206073eb511a2963d37914"
+hash = "0bb29a73e5f83b72e1fa56677bde2745e30a984a4559e3fa7164ed7b845e11c6"
 metafile = true
 
 [[files]]

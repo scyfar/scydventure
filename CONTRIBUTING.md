@@ -74,6 +74,12 @@ Releases are automated with GitHub actions based on Git tags.
 The process uses scripts provided in the [`scripts` directory](scripts/). These are optimized to
 work on Linux. See the respective script for a description of what it does and how to use it.
 
+The requirements for the script are available in the `requirements.txt` and can be installed with
+
+```shell
+pip install -r scripts/requirements.txt
+```
+
 To create the modpack file
 ([`mrpack`](https://support.modrinth.com/en/articles/8802351-modrinth-modpack-format-mrpack)),
 the tool [`packwiz`][packwiz] is used.
@@ -109,7 +115,6 @@ The following steps must be performed to create a release.
 6. Add information to the
    [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
    on GitHub
-7. Optional for direct local use: run the [env change script](scripts/client-env-required.py)
 
 > [!NOTE]
 > The release type is determined from the Git tag name.

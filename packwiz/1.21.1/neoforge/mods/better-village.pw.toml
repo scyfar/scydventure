@@ -1,13 +1,13 @@
 name = "Better Villages"
-filename = "bettervillage-neoforge-1.21.1-3.2.1.jar"
+filename = "bettervillage-neoforge-1.21.1-3.3.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/dGVX5JbJ/versions/1TSlr9hR/bettervillage-neoforge-1.21.1-3.2.1.jar"
+url = "https://cdn.modrinth.com/data/dGVX5JbJ/versions/gk3BwE6u/bettervillage-neoforge-1.21.1-3.3.0.jar"
 hash-format = "sha512"
-hash = "6180d773b86f0ae37154c9152e666f2c800973370a67930c21fd24a19817f235276ec84b61d7b239956d1f388c923a0a7b8464271254cb35ea39f9861f801831"
+hash = "9f0ba116bbe3ed02014baad1349354a261838ae71e5461010e19a40c09c14bf1e5576295cae551d889bdae2e7afd29775c1c85a7ef908f1e4a03bc0d4ee467e3"
 
 [update]
 [update.modrinth]
 mod-id = "dGVX5JbJ"
-version = "1TSlr9hR"
+version = "gk3BwE6u"

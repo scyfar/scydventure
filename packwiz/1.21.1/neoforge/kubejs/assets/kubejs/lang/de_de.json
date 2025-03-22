@@ -1,0 +1,15 @@
+{
+  "item.scydventure.smithing_template.tooltip.applies_to": "Anwendbar auf:",
+  "item.scydventure.smithing_template.tooltip.ingredients": "Werkstoffe:",
+
+  "item.scydventure.dark_netherite_upgrade_smithing_template.tooltip.display_name": "Schmiedevorlage",
+  "item.scydventure.dark_netherite_upgrade_smithing_template.tooltip.description": "Dunkle Netheritaufwertung",
+  "item.scydventure.dark_netherite_upgrade_smithing_template.tooltip.indent_netherite_equipment": " Netheritrüstung",
+  "item.scydventure.dark_netherite_upgrade_smithing_template.tooltip.indent_netherite-alloy_equipment": " Netheritlegierungsrüstung",
+  "item.scydventure.dark_netherite_upgrade_smithing_template.tooltip.indent_netherite-alloy_ingot": " Netheritlegierungsbarren",
+
+  "item.scydventure.resonarium_smithing_template.tooltip.display_name": "Schmiedevorlage",
+  "item.scydventure.resonarium_smithing_template.tooltip.description": "Resonariumvorlage",
+  "item.scydventure.resonarium_smithing_template.tooltip.indent_iron_equipment": " Resonariumrüstung",
+  "item.scydventure.resonarium_smithing_template.tooltip.indent_resonarium_plate": " Resonariumplatte"
+}
