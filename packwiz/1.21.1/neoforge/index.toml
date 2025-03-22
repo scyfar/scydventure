@@ -141,8 +141,8 @@ file = "kubejs/assets/kubejs/textures/item/resonarium_smithing_template.png"
 hash = "383755951778e6a8d42a417dd8458419b03e6d2827f86e167fbeb2bd8732977c"
 
 [[files]]
-file = "kubejs/client_scripts/main.js"
-hash = "fede78032fd82e10246d8b75e4733d18029d80ca89054d1ce499a899288be921"
+file = "kubejs/client_scripts/brick_furnace_tooltip.js"
+hash = "a7dca90c5e0feb57cc2cebcf09799c64775bd0182b3b91e89273d199279f0966"
 
 [[files]]
 file = "kubejs/server_scripts/add_neoenchant_loot.js"
