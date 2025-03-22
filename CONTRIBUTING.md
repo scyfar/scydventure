@@ -111,6 +111,8 @@ The following steps must be performed to create a release.
 
    - The `<git_tag>` argument will be the new version and must follow the format
      `<pack-version>_<minecraft-version>_<loader-name>`
+   - The `<new_draft_version>` is the version that will be set for the next iteration and is usually
+     a `-draft` version
 
 6. Add information to the
    [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
