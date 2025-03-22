@@ -12,7 +12,7 @@
 ⏺
 [Modrinth](https://modrinth.com/modpack/scydventure)
 
-[![github.com - scydventure](https://img.shields.io/github/v/release/scyfar/scydventure?label=%20&logo=github)](https://github.com/scyfar/scydventure/releases/latest)
+[![github.com - scydventure](https://img.shields.io/github/v/release/scyfar/scydventure?label=%20&logo=github&include_prereleases)](https://github.com/scyfar/scydventure/releases/latest)
 
 ---
 
