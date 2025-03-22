@@ -107,14 +107,19 @@ The following steps must be performed to create a release.
 
    - e.g. set the `preserve` flag in `index.toml`
 
-5. Run the [release script](scripts/release.py)
+5. Write the `./packwiz/[...]/[...]/CHANGELOG.md`
+
+   - This changelog is player facing, not technical
+   - The markers are important as these are used in the GitHub action to extract the information
+
+6. Run the [release script](scripts/release.py)
 
    - The `<git_tag>` argument will be the new version and must follow the format
      `<pack-version>_<minecraft-version>_<loader-name>`
    - The `<new_draft_version>` is the version that will be set for the next iteration and is usually
      a `-draft` version
 
-6. Add information to the
+7. Add information to the
    [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
    on GitHub
 
