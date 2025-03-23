@@ -111,6 +111,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: install Python requirements
+        run: pip install -r ./scripts/requirements.txt
       - name: get release notes
         id: release_notes
         run: |-
@@ -123,8 +125,8 @@ jobs:
         run: |-
           dependencies=$(python ./scripts/_dependency-information.py "${{ github.ref_name }}")
           echo "dependencies<<EOF" >> $GITHUB_OUTPUT
-          echo "$dependencies" >> $GITHUB_OUT
-          echo "EOF" >> $GITHUB_OUT
+          echo "$dependencies" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
       - name: publish to modrinth
         uses: cloudnode-pro/modrinth-publish@v2
         with:
@@ -141,7 +143,7 @@ jobs:
           files: |-
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
             ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
-            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ ASSET_FILE_ATTESTATION_SUFFIX }}.zip
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_ATTESTATION_SUFFIX }}.zip
           primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
           dependencies: |-
             ${{ steps.dependencies.outputs.dependencies }}
