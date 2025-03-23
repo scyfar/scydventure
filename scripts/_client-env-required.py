@@ -10,7 +10,7 @@ import zipfile
 #!
 #! # Usage
 #! ```
-#! python client-env-required.py `<source_file>` `<target_file>`
+#! python _client-env-required.py `<source_file>` `<target_file>`
 #! ```
 #!
 #! # Description
