@@ -7,6 +7,8 @@ on:
 
 env:
   ASSET_FILE_NAME_NO_EXT: "Scydventure-${{ github.ref_name }}"
+  ASSET_FILE_SINGLEPLAYER_SUFFIX: "_singleplayer"
+  ASSET_FILE_ATTESTATION_SUFFIX: "_attestation"
 
 jobs:
   build:
@@ -30,22 +32,27 @@ jobs:
       - name: install packwiz
         run: go install github.com/packwiz/packwiz@latest
       - name: build artifact
-        run: python ./scripts/_export-mrpack.py "${{ github.ref_name }}" ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+        run: python ./scripts/_export-mrpack.py "${{ github.ref_name }}" "${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack"
+      - name: build singleplayer artifact
+        run: python ./scripts/_client-env-required.py "${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack" "${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack"
       - name: attest build provenance
         id: attest
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+          subject-path: |-
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
       - name: zip attestation
         run: |-
-          zip ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip ${{ steps.attest.outputs.bundle-path }}
+          zip ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_ATTESTATION_SUFFIX }}.zip ${{ steps.attest.outputs.bundle-path }}
       - name: upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: release-files
           path: |-
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
-            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_ATTESTATION_SUFFIX }}.zip
   release:
     runs-on: ubuntu-latest
     needs: build
@@ -63,7 +70,8 @@ jobs:
           discussion_category_name: Versions
           files: |-
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
-            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_ATTESTATION_SUFFIX }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GH_RELEASE_PAT }}
   publish:
@@ -125,7 +133,8 @@ jobs:
             ${{ steps.extract.outputs.mc_version }}
           files: |-
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
-            ${{ env.ASSET_FILE_NAME_NO_EXT }}_attestation.zip
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
+            ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ ASSET_FILE_ATTESTATION_SUFFIX }}.zip
           primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
           dependencies: |-
             [{"project_id": "HVnmMxH1", "dependency_type": "optional"}]

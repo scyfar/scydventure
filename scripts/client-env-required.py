@@ -21,8 +21,7 @@ import zipfile
 #! This is currently necessary for the Modrinth app to also include server only mods on local
 #! installs.
 #!
-#! Unpacks the `<source_file>` in a local `tmp` directory. The `tmp` directory will be automatically
-#! removed with the next restart (on Linux).
+#! Unpacks the `<source_file>` in a local `tmp` directory.
 #!
 #! # References
 #! - https://github.com/scyfar/scydventure/discussions/25#discussion-8087151
@@ -77,8 +76,8 @@ try:
             for filename in filenames:
                 file_path = os.path.join(foldername, filename)
                 # Create archive-relative path
-                arcname = os.path.relpath(file_path, tmp_dir)
-                zip_out.write(file_path, arcname)
+                archive_name = os.path.relpath(file_path, tmp_dir)
+                zip_out.write(file_path, archive_name)
 
     print(f"Repacked mrpack created at: {target_file}")
 
