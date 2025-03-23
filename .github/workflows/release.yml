@@ -118,6 +118,13 @@ jobs:
           echo "release_notes<<EOF" >> $GITHUB_OUTPUT
           echo "$release_notes" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+      - name: get dependency information
+        id: dependencies
+        run: |-
+          dependencies=$(python ./scripts/_dependency-information.py "${{ github.ref_name }}")
+          echo "dependencies<<EOF" >> $GITHUB_OUTPUT
+          echo "$dependencies" >> $GITHUB_OUT
+          echo "EOF" >> $GITHUB_OUT
       - name: publish to modrinth
         uses: cloudnode-pro/modrinth-publish@v2
         with:
@@ -137,4 +144,4 @@ jobs:
             ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ ASSET_FILE_ATTESTATION_SUFFIX }}.zip
           primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
           dependencies: |-
-            [{"project_id": "HVnmMxH1", "dependency_type": "optional"}]
+            ${{ steps.dependencies.outputs.dependencies }}
