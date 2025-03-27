@@ -1,7 +1,6 @@
 from pathlib import Path
 import json
 import os
-import re
 import sys
 import toml
 

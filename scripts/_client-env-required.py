@@ -1,7 +1,6 @@
 from pathlib import Path
 import json
 import os
-import shutil
 import sys
 import tempfile
 import zipfile
@@ -77,4 +76,3 @@ with zipfile.ZipFile(target_file, 'w', zipfile.ZIP_DEFLATED) as zip_out:
             # Create archive-relative path
             archive_name = os.path.relpath(file_path, tmp_dir)
             zip_out.write(file_path, archive_name)
-

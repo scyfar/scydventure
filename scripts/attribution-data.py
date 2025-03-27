@@ -3,7 +3,6 @@ from urllib.parse import urlparse
 import json
 import os
 import requests
-import subprocess
 import sys
 import tempfile
 import toml
