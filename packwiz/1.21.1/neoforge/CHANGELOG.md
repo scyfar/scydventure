@@ -1,5 +1,22 @@
 # Scydventure - Changelog
 
+<!-- BEGIN 0.1.2-alpha_1.21.1_neoforge -->
+
+## What's Changed (`0.1.2-alpha_1.21.1_neoforge`)
+
+This is a technical release.
+
+No changes were made to the actual modpack. This release fixes the installation issue where mods
+targeted for the server only would not be properly installed.
+
+You can read about the details [in the Dev-Log.](https://github.com/scyfar/scydventure/discussions/25)
+
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/0.1.2-alpha_1.21.1_neoforge
+
+For questions to a particular version, feel free to head over to the
+[respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
+
+<!-- END 0.1.2-alpha_1.21.1_neoforge -->
 <!-- BEGIN 0.1.1-alpha_1.21.1_neoforge -->
 
 ## What's Changed (`0.1.1-alpha_1.21.1_neoforge`)
@@ -18,7 +35,6 @@ No changes were made to the actual modpack, but additional information is added 
 **Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/0.1.1-alpha_1.21.1_neoforge
 
 <!-- END 0.1.1-alpha_1.21.1_neoforge -->
-
 <!-- BEGIN 0.1.0-alpha_1.21.1_neoforge -->
 
 ## What's Changed (`0.1.0-alpha_1.21.1_neoforge`)
