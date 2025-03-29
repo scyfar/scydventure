@@ -144,6 +144,6 @@ jobs:
             ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
             ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
             ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_ATTESTATION_SUFFIX }}.zip
-          primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}.mrpack
+          primary-file: ${{ env.ASSET_FILE_NAME_NO_EXT }}${{ env.ASSET_FILE_SINGLEPLAYER_SUFFIX }}.mrpack
           dependencies: |-
             ${{ steps.dependencies.outputs.dependencies }}
