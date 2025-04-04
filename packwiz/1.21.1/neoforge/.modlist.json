@@ -40,18 +40,18 @@
   {
     "dependencies": [
       {
-        "url": "https://modrinth.com/mod/library-ferret"
-      }
-    ],
-    "url": "https://modrinth.com/mod/better-village"
-  },
-  {
-    "dependencies": [
-      {
         "url": "https://modrinth.com/mod/cloth-config"
       }
     ],
     "url": "https://modrinth.com/mod/betterf3"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/library-ferret"
+      }
+    ],
+    "url": "https://modrinth.com/mod/better-village"
   },
   {
     "dependencies": [
@@ -139,6 +139,14 @@
   },
   {
     "url": "https://modrinth.com/mod/comforts"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/forgified-fabric-api"
+      }
+    ],
+    "url": "https://modrinth.com/mod/connector"
   },
   {
     "dependencies": [
@@ -248,9 +256,6 @@
   },
   {
     "url": "https://modrinth.com/mod/explorers-compass"
-  },
-  {
-    "url": "https://modrinth.com/mod/extrasoundsforge"
   },
   {
     "url": "https://modrinth.com/mod/farmers-delight"
@@ -396,10 +401,21 @@
     "url": "https://modrinth.com/mod/mouse-tweaks"
   },
   {
+    "url": "https://modrinth.com/mod/mru"
+  },
+  {
     "url": "https://modrinth.com/mod/natures-compass"
   },
   {
     "url": "https://modrinth.com/datapack/neoenchant"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/balm"
+      }
+    ],
+    "url": "https://modrinth.com/mod/netherportalfix"
   },
   {
     "url": "https://modrinth.com/mod/noisium"
@@ -438,23 +454,12 @@
     "url": "https://modrinth.com/mod/searchables"
   },
   {
-    "url": "https://modrinth.com/mod/short-circuit"
-  },
-  {
     "dependencies": [
       {
         "url": "https://modrinth.com/mod/cloth-config"
       }
     ],
     "url": "https://modrinth.com/mod/shulkerboxtooltip"
-  },
-  {
-    "dependencies": [
-      {
-        "url": "https://modrinth.com/mod/forgified-fabric-api"
-      }
-    ],
-    "url": "https://modrinth.com/mod/connector"
   },
   {
     "url": "https://modrinth.com/mod/sodium"
@@ -498,10 +503,10 @@
   {
     "dependencies": [
       {
-        "url": "https://modrinth.com/mod/sophisticated-core"
+        "url": "https://modrinth.com/mod/mru"
       }
     ],
-    "url": "https://modrinth.com/mod/sophisticated-storage"
+    "url": "https://modrinth.com/mod/sound"
   },
   {
     "dependencies": [
@@ -536,6 +541,9 @@
   },
   {
     "url": "https://modrinth.com/mod/tiny-item-animations"
+  },
+  {
+    "url": "https://modrinth.com/mod/toms-storage"
   },
   {
     "dependencies": [

@@ -1,13 +1,13 @@
 name = "Legendary Tooltips"
-filename = "LegendaryTooltips-1.21-neoforge-1.4.11.jar"
+filename = "LegendaryTooltips-1.21.1-neoforge-1.5.3.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/atHH8NyV/versions/mETd5tfg/LegendaryTooltips-1.21-neoforge-1.4.11.jar"
+url = "https://cdn.modrinth.com/data/atHH8NyV/versions/ohm2eYj2/LegendaryTooltips-1.21.1-neoforge-1.5.3.jar"
 hash-format = "sha512"
-hash = "93ba7d5c548affecbdcc2edba1735aa5192df0f13dca4a7c429734a534f0db2bd4c54e772dc5917abafc1e6543e4c79dcde327b5b224de50166b9f027daef033"
+hash = "1ee83613d0277ea772932227bd287f1d12557ce181d031b1683230ee6a775cd2e5ac92b16db3e4d16ce0bc76c41fdc522a7e2d244791d94741602e919196d0c0"
 
 [update]
 [update.modrinth]
 mod-id = "atHH8NyV"
-version = "mETd5tfg"
+version = "ohm2eYj2"

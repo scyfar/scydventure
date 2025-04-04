@@ -19,7 +19,8 @@ pollenBiomes = [
     "minecraft:sunflower_plains",
     "biomesoplenty:field",
     "biomesoplenty:jacaranda_glade",
-    "biomesoplenty:lavender_field"
+    "biomesoplenty:lavender_field",
+    "biomesoplenty:pasture"
 ]
 pollenDensity = 50
 sculkDustBiomes = [

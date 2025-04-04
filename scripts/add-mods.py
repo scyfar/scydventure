@@ -62,3 +62,6 @@ for mod in modlist:
         "--meta-folder-base",
         source_dir
     ], check=True)
+
+os.chdir(source_dir)
+subprocess.run(["packwiz", "refresh"], check=True)
