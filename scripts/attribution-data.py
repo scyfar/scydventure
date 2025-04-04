@@ -90,9 +90,9 @@ with open(f"{source_dir}/pack.toml", "r") as f:
     pack_config = toml.load(f)
 
 print(f"The [Minecraft](https://www.minecraft.net/en-us) version is `{pack_config.get('versions', {}).get('minecraft', '')}`.\\")
-print(f"The [NeoForge](https://neoforged.net/) version is `{pack_config.get('versions', {}).get('neoforge', '')}`.\n\n")
-print(f"| Mod | Version | Author | License |")
-print(f"| --- | ------- | ------ | ------- |")
+print(f"The [NeoForge](https://neoforged.net/) version is `{pack_config.get('versions', {}).get('neoforge', '')}`.\n")
+print("| Mod | Version | Author | License |")
+print("| --- | ------- | ------ | ------- |")
 
 with open(f"{source_dir}/.modlist.json", "r") as f:
     modlist_json = json.load(f)

@@ -5,7 +5,7 @@ A big welcome and thank you for considering contributing to Scydventure! We love
 We want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
-- Discussing the current state of the modpack
+- Discussing the current state of the mod-pack
 - Submitting a fix
 - Proposing new features
 
@@ -80,7 +80,7 @@ The requirements for the script are available in the `requirements.txt` and can 
 pip install -r scripts/requirements.txt
 ```
 
-To create the modpack file
+To create the mod-pack file
 ([`mrpack`](https://support.modrinth.com/en/articles/8802351-modrinth-modpack-format-mrpack)),
 the tool [`packwiz`][packwiz] is used.
 
@@ -92,7 +92,7 @@ The following steps must be performed to create a release.
 
    - **This file also must have entries for all dependencies**
    - It is used for the attribution data
-   - It is used to add mods to the modpack
+   - It is used to add mods to the mod-pack
 
 2. Run the [script to add mods](scripts/add-mods.py)
 
@@ -103,14 +103,16 @@ The following steps must be performed to create a release.
 3. Run the [attribution script](scripts/attribution-data.py) and add the data to the
    [`ATTRIBUTION.md`](ATTRIBUTION.md)
 
-4. Make manual changes to the modpack files, if necessary
+4. Make manual changes to the mod-pack files, if necessary
 
    - e.g. set the `preserve` flag in `index.toml`
 
-5. Write the `./packwiz/[...]/[...]/CHANGELOG.md`
+5. Write/update the `./packwiz/[...]/[...]/CHANGELOG.md`
 
    - This changelog is player facing, not technical
    - The markers are important as these are used in the GitHub action to extract the information
+   - There may already be a changelog present with a `NEXT` version for the pack. This must be used
+     and the version changed to the actual release version. This changelog may not be complete.
 
 6. Run the [release script](scripts/release.py)
 
@@ -118,10 +120,6 @@ The following steps must be performed to create a release.
      `<pack-version>_<minecraft-version>_<loader-name>`
    - The `<new_draft_version>` is the version that will be set for the next iteration and is usually
      a `-draft` version
-
-7. Add a link to the
-   [version discussion](https://github.com/scyfar/scydventure/discussions/categories/versions)
-   on Modrinth to [the version](https://modrinth.com/modpack/scydventure/versions)
 
 > [!NOTE]
 > The release type is determined from the Git tag name.

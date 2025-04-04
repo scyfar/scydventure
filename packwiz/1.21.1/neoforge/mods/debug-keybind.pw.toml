@@ -1,13 +1,13 @@
 name = "Debug Keybind"
-filename = "DebugKeybind-neoforge-12.0.0.jar"
+filename = "DebugKeybind-neoforge-12.0.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/DX9ioka8/versions/in1rMvzA/DebugKeybind-neoforge-12.0.0.jar"
+url = "https://cdn.modrinth.com/data/DX9ioka8/versions/SuXiD2yR/DebugKeybind-neoforge-12.0.1.jar"
 hash-format = "sha512"
-hash = "1614401af603d1368b4a24ca18eabf22dd871be2eb5d412499626ece7bcbf44e8488c33920cfce257f145195454347a802097c1a2b411c97b3039756e1d5b48f"
+hash = "de7a4fa384d0825973e8db53614e6e14117bc44aa1833a594f923512533b9b77f03f085c8569e929c72616ffeccdaa1f49a734d0ab67a3b103cd7f1c739e0e33"
 
 [update]
 [update.modrinth]
 mod-id = "DX9ioka8"
-version = "in1rMvzA"
+version = "SuXiD2yR"
