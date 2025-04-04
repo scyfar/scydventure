@@ -1,8 +1,8 @@
 # Scydventure - Changelog
 
-<!-- BEGIN NEXT_1.21.1_neoforge -->
+<!-- BEGIN 0.1.0-beta_1.21.1_neoforge -->
 
-## What's Changed (`NEXT_1.21.1_neoforge`)
+## What's Changed (`0.1.0-beta_1.21.1_neoforge`)
 
 - The mod [Sophisticated Storage](https://modrinth.com/mod/sophisticated-storage) was replaced in
 favor of [Tom's Simple Storage Mod](https://modrinth.com/mod/toms-storage). Tom's does fit better
@@ -23,12 +23,12 @@ nether portals (even in single player mode).
 All mods have been updated to their latest version as of 2025-04-04 and NeoForge was updated to
 `21.1.143`.
 
-**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/0.1.0-beta_1.21.1_neoforge
 
 For questions to a particular version, feel free to head over to the
 [respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
 
-<!-- END NEXT_1.21.1_neoforge -->
+<!-- END 0.1.0-beta_1.21.1_neoforge -->
 <!-- BEGIN 0.1.2-alpha_1.21.1_neoforge -->
 
 ## What's Changed (`0.1.2-alpha_1.21.1_neoforge`)

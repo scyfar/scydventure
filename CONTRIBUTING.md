@@ -111,15 +111,16 @@ The following steps must be performed to create a release.
 
    - This changelog is player facing, not technical
    - The markers are important as these are used in the GitHub action to extract the information
-   - There may already be a changelog present with a `NEXT` version for the pack. This must be used
-     and the version changed to the actual release version. This changelog may not be complete.
+   - There may already be a changelog present with a `NEXT` version for the pack which must be used
+     and the version must be changed to the actual release version
+   - The existing changelog may not be complete and must be completed
+   - The changes must be manually staged with Git
 
 6. Run the [release script](scripts/release.py)
 
    - The `<git_tag>` argument will be the new version and must follow the format
      `<pack-version>_<minecraft-version>_<loader-name>`
-   - The `<new_draft_version>` is the version that will be set for the next iteration and is usually
-     a `-draft` version
+   - The `<new_draft_version>` is the version that will be set for the next iteration
 
 > [!NOTE]
 > The release type is determined from the Git tag name.

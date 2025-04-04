@@ -86,14 +86,16 @@ if config["version"] != git_tag:
     with open(f"{source_dir}/pack.toml", "w") as f:
         toml.dump(config, f)
 
-    # Git add & commit
+    # Git add version changes
     subprocess.run(["git", "-C", source_dir, "add", "pack.toml"], cwd=root_dir, check=True)
-    commit_message = f"chore(release): prepare for release ({git_tag})"
-    subprocess.run(
-        ["git", "commit", "-m", commit_message],
-        cwd=root_dir,
-        check=True,
-    )
+
+# Git commit the release preparation
+commit_message = f"chore(release): prepare for release ({git_tag})"
+subprocess.run(
+    ["git", "commit", "-m", commit_message],
+    cwd=root_dir,
+    check=True,
+)
 
 # Create the release tag
 tag_message = f"Release version {git_tag}"
@@ -112,7 +114,7 @@ if new_draft_version:
 
     # Git add & commit
     subprocess.run(["git", "-C", source_dir, "add", "pack.toml"], cwd=root_dir, check=True)
-    commit_message = f"chore(release): prepare for new development iteration"
+    commit_message = "chore(release): prepare for new development iteration"
     subprocess.run(
         ["git", "commit", "-m", commit_message],
         cwd=root_dir,
