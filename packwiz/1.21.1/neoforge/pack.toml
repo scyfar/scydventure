@@ -1,6 +1,6 @@
 name = "Scydventure"
 author = "scyfar"
-version = "0.2.0-beta_1.21.1_neoforge"
+version = "NEXT_1.21.1_neoforge"
 pack-format = "packwiz:1.1.0"
 
 [index]
