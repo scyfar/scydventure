@@ -1,5 +1,38 @@
 # Scydventure - Changelog
 
+<!-- BEGIN NEXT_1.21.1_neoforge -->
+
+## What's Changed (`NEXT_1.21.1_neoforge`)
+
+- The mod [Neo Enchant+](https://modrinth.com/datapack/neoenchant) has been removed. The
+  implementation for the enchant effects is too powerful and not configurable.
+
+- The [Farmer's Delight](https://modrinth.com/mod/farmers-delight) settings have been changed.
+    - The village compost heaps are now disabled.
+    - The boost changes for rich soil has been lowered to `0.05` (was `0.2`).
+    - The fortune effect bonus for the cutting board has ben lowered to `0.05` (was `0.1`)
+
+- The mod [Villager Leads](https://modrinth.com/mod/exline-villager-leads) was added for better
+  villager handling.
+
+- The mod [Tree Harvester](https://modrinth.com/mod/tree-harvester) was added.
+
+- The mod [Ore Harvester](https://modrinth.com/mod/ore-harvester) was added.
+
+- The mod [Leaves Be Gone](https://modrinth.com/mod/leaves-be-gone) was removed. The added mod
+  [Tree Harvester](https://modrinth.com/mod/tree-harvester) already provides this functionality.
+
+- The double door config was changed to support `16` (was `10`) adjacent doors at once.
+
+All mods have been updated to their latest version as of 2025-04-07 and NeoForge was updated to
+`21.1.145`.
+
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+
+For questions to a particular version, feel free to head over to the
+[respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
+
+<!-- END NEXT_1.21.1_neoforge -->
 <!-- BEGIN 0.1.0-beta_1.21.1_neoforge -->
 
 ## What's Changed (`0.1.0-beta_1.21.1_neoforge`)

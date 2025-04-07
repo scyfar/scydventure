@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "f6605e66fedb4144c2ee36a3ca3e4c647ac99a8aa4ad02a3d9d0fb10f3955b2e"
+hash = "4c0d361905fc3299dfa44dfae6a7a0d614e9948a6efe4b663aab15b5fa95322e"
 
 [[files]]
 file = "config/actuallyharvest-common.toml"
@@ -57,6 +57,10 @@ file = "config/craftingtweaks-common.toml"
 hash = "5f02f7a1d2c7c47024321bc8265d2d118350e8014efb41450692ebb9a3c0126b"
 
 [[files]]
+file = "config/doubledoors.json5"
+hash = "64d897d3957e70d8fc28794fb6e3f26fe3b66f130e1cbb2983b946ebeee2ab22"
+
+[[files]]
 file = "config/dsurround/dsurround.json"
 hash = "2e814d694197a93df948622e30e399d36f0f617e85eabfee27339aaa7ffd43d7"
 
@@ -73,6 +77,10 @@ file = "config/explorerscompass-common.toml"
 hash = "698f80bf1252a46efa4fd98ada007c32c2157fbf81891c12613e67a0aac6cbb4"
 
 [[files]]
+file = "config/farmersdelight-common.toml"
+hash = "def6a743fe1d9ad76162478950da07cc83421d2415e1635ae4f04057d7c48a30"
+
+[[files]]
 file = "config/jade/plugins.json"
 hash = "069112eb55489adcaf531bd88dc549366213b3e96bfceaaa0f04814c48ead8eb"
 
@@ -87,6 +95,10 @@ hash = "32701692ec2ede22f3aef544cf75db3b611ce15c52188b74d886ce1c459be58e"
 [[files]]
 file = "config/notenoughanimations.json"
 hash = "e2cd3d077a94a4000fda2300c3521fa283462bc9f1628caa453828d47345e4b3"
+
+[[files]]
+file = "config/oreharvester/harvestable_pickaxe_blacklist.txt"
+hash = "a6ffc5879a72cf978af712226e8a3f3d44635272377b05364d1a599bf2b132c5"
 
 [[files]]
 file = "config/satisfying_buttons-client.toml"
@@ -137,6 +149,14 @@ file = "config/trashslot-common.toml"
 hash = "3b4f6e281534501662e767b74662de69e151503d331462078d4f50f5b52c04e6"
 
 [[files]]
+file = "config/treeharvester.json5"
+hash = "b7ef39d7018b5d93f6294d9b93404c73669183c3c45030d0129c379a2f150927"
+
+[[files]]
+file = "config/treeharvester/harvestable_axe_blacklist.txt"
+hash = "0a73147980a308801793b69b1045bbfd48d2c3256bd6212be31b92152516812a"
+
+[[files]]
 file = "config/villagernames.json5"
 hash = "f5dca7470ee34d483448ec4b36314978d0ff148b4878cb4ea8108d3204a13537"
 
@@ -150,15 +170,19 @@ hash = "d35989de1930dee65145b79e1a1567f00b01e3f43fd392650b9a87fa48bdaaef"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/de_de.json"
-hash = "b9a0e9c4e2817cc68c430445c7d9ddc930e02303777083ef91481e8cc912b395"
+hash = "74e284915dacec1a45d88ab58ab0d7cd5ae18ef797413bb75920ea4aef829624"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "c056ccca4c8bb978f9972b9514ad717fa5bd1ad43c548555c85787f238d2afb3"
+hash = "7fb37ce83c7ac98af90ab37c6aeb156d4729a01132d73c81f6126fec965e3422"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/dark_netherite_upgrade_smithing_template.png"
 hash = "b616cfeee4f9595a0b66b72f0cc06df62d06b382afe52582b73a62d828148a2d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/manta_ray_skin.png"
+hash = "d9070ccfd82f7d081129926f9faf2fe164137194ae8a2e0f72d0f632a925078d"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/resonarium_smithing_template.png"
@@ -166,11 +190,15 @@ hash = "383755951778e6a8d42a417dd8458419b03e6d2827f86e167fbeb2bd8732977c"
 
 [[files]]
 file = "kubejs/client_scripts/brick_furnace_tooltip.js"
-hash = "a7dca90c5e0feb57cc2cebcf09799c64775bd0182b3b91e89273d199279f0966"
+hash = "f5c04b929464c8018a1121a0b4220e203a2ab94d9fd7182592c7f97c9035f3db"
 
 [[files]]
-file = "kubejs/server_scripts/add_neoenchant_loot.js"
-hash = "30a13d7fe726c4296344654c04e25ac0b866b284d71a7517f64d67096ef378cd"
+file = "kubejs/client_scripts/ore_harvest_tooltips.js"
+hash = "d9ff21a390e23fe257c284e4ec7e973a899c4ff0f80ec9a86467a6b439026562"
+
+[[files]]
+file = "kubejs/client_scripts/tree_harvest_tooltips.js"
+hash = "9320ca485edef4a2f38e2cf125805177466599643081684b8f729000b781cfa6"
 
 [[files]]
 file = "kubejs/server_scripts/advanced_netherite_deeper_darker.js"
@@ -189,11 +217,15 @@ file = "kubejs/server_scripts/fix_deeper_darker_resonarium.js"
 hash = "0176c267f0ec3a7d80cdc8d99921bfcaaefb829bcb9206e8838fbc853e978658"
 
 [[files]]
+file = "kubejs/server_scripts/manta_ray_skin_living_things.js"
+hash = "82d7119008eac380afdd48339ea84e3320de36e52538b52aa47ba9a1e47dcf8a"
+
+[[files]]
 file = "kubejs/server_scripts/remove_immersive_aircraft_weapons.js"
 hash = "68b93b9549aef3fb7061e0840bbd4da5efbd0fd81ba80bb833f4e0c7140ef38e"
 
 [[files]]
-file = "kubejs/server_scripts/remove_pipez_energy_gar.js"
+file = "kubejs/server_scripts/remove_pipez_energy_gas.js"
 hash = "e549f9d55f75fb28194d3d98c74f5a48a8d4f0933ba4b10cd4c15d9adef18eed"
 
 [[files]]
@@ -203,6 +235,10 @@ hash = "0ac08cfd101b20458f73e665943bcc783341c4eed880728b781493faf904ae96"
 [[files]]
 file = "kubejs/startup_scripts/advanced_netherite_deeper_darker.js"
 hash = "2971ad341b62b97b725b619390f8400e7e02955e1773adc86563acfe3bad62d6"
+
+[[files]]
+file = "kubejs/startup_scripts/manta_ray_skin_living_things.js"
+hash = "13896b0c2bfd404874b1ff32d58d4e3db8274619f5fbe4bb6b45340f2aeae88a"
 
 [[files]]
 file = "kubejs/startup_scripts/resonarium_smithing_template.js"
@@ -285,12 +321,12 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf-lib.pw.toml"
-hash = "140d6cac4df0f296c858eaef9e3f92d31565140b91d867120554e12486b12680"
+hash = "aa36f13a66eefe87cbe72bb189199bca4963d50d49d7415d9033a5930f10d365"
 metafile = true
 
 [[files]]
 file = "mods/bow-infinity-fix.pw.toml"
-hash = "c5f74f27812ec843425b20e69cfb7d9b4b7784219078107a654540238f50470c"
+hash = "b8837889b804dacb837572fcf16032cd531b5814e1817ed0d6a35523cc9c5d86"
 metafile = true
 
 [[files]]
@@ -429,6 +465,11 @@ hash = "0b380e24e46e328c362bda7cff892c5b0e471789ca8c429fd2a588eaf63b8712"
 metafile = true
 
 [[files]]
+file = "mods/exline-villager-leads.pw.toml"
+hash = "1500bebda41448a9ec8bc30bcbaba4f78cce6ce5015510d0109e63d75d81cfca"
+metafile = true
+
+[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "de5ea0b6d6c303af3788a178996c39f46d260cd15a86121b1246b3591913d256"
 metafile = true
@@ -529,11 +570,6 @@ hash = "eba62fcfbe8678c035ef239481af4f01b21b33d198f8bf7467726e02bf37f845"
 metafile = true
 
 [[files]]
-file = "mods/leaves-be-gone.pw.toml"
-hash = "3f907a8532b4ca98390055ca0cb1bbd87e8ebcd44be6afe9b69280859ff37035"
-metafile = true
-
-[[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "21836d119720b99045a5b5be576b5c94618fb3715471e0818cd09bf35f3d38d7"
 metafile = true
@@ -594,11 +630,6 @@ hash = "abfc8909de1c851ccf4ef296e05d1017332a21fef76fd1f938828fcff925115b"
 metafile = true
 
 [[files]]
-file = "mods/neoenchant.pw.toml"
-hash = "fe17faa7efe448b5626d529558439e88f5b28a25c1db0af4eaab37542e8fb250"
-metafile = true
-
-[[files]]
 file = "mods/netherportalfix.pw.toml"
 hash = "5dc059422613b5645cb00e32d3bfd53de428c4939113d11ce2c844cb54165da6"
 metafile = true
@@ -611,6 +642,11 @@ metafile = true
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "82a5c30ed91d272ee1895376e0d2cf57504b3d9db4aba6547e19eaa344861ada"
+metafile = true
+
+[[files]]
+file = "mods/ore-harvester.pw.toml"
+hash = "d24b63a488c7807499b18fe76eda1ecd3ad8b787ded557f9a6412dadc66ba4d4"
 metafile = true
 
 [[files]]
@@ -690,7 +726,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodiumleafculling.pw.toml"
-hash = "819b3e7402252905b6fe89743589df910c84995e8305995cb61d1f32fda2a2eb"
+hash = "a73dfb1bf6884ae786b2def0624dee9010bf121d0b5678b46043d9312f54b501"
 metafile = true
 
 [[files]]
@@ -700,12 +736,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "117413a1b15eb0f44b73f6030f8e82c293e79b1b3711524541ed7c13d5ce517e"
+hash = "d34eb22327953a0488d6f98e71a8266848a720034e298e7d2a5d4fd656129eed"
 metafile = true
 
 [[files]]
 file = "mods/sound.pw.toml"
-hash = "20d5ee067dff7a6c00482602ec4656f6a78b6c21e6e0a965e34d16a497615305"
+hash = "47766591a95d95ae6b58d45a44a8b6a30db22002098962829e52083bc3708482"
 metafile = true
 
 [[files]]
@@ -756,6 +792,11 @@ metafile = true
 [[files]]
 file = "mods/trashslot.pw.toml"
 hash = "b7edb8bf6ab6913509a777faa013241784c3a75a966a1c62e4ddd786ecd2392f"
+metafile = true
+
+[[files]]
+file = "mods/tree-harvester.pw.toml"
+hash = "f5b816b8de8c237a6a7b51fda8323627a995796589fc6934ed4cd15e7f40e55a"
 metafile = true
 
 [[files]]

@@ -15,7 +15,7 @@ import toml
 #! The required `<git_tag>` will be set as new version in the `pack.toml`. It must match this
 #! template: `<pack-version>_<minecraft-version>_<loader-name>`
 #! The optional `<new_draft_version>` will be set as `version` of the pack after the release is
-#! created. It is usually a `-draft` version for the next development iteration
+#! created. Defaults to `NEXT_{<minecraft-version>}_{loader-name}`.
 #!
 #! The source files are expected to be in a directory matching the template
 #! `./packwiz/{<minecraft-version>}/{<loader-name>}`.
@@ -60,12 +60,12 @@ git_tag = sys.argv[1].strip().lower()
 if git_tag.startswith("v"):
     git_tag = git_tag[1:]
 
-new_draft_version = ""
-if len(sys.argv) > 2:
-    new_draft_version = sys.argv[2].strip()
-
 # Deconstruct the new version
 pack_version, mc_version, loader = git_tag.split("_", 2)
+
+new_draft_version = f"NEXT_{mc_version}_{loader}"
+if len(sys.argv) > 2:
+    new_draft_version = sys.argv[2].strip()
 
 source_dir = os.path.normpath(f"./packwiz/{mc_version}/{loader}")
 root_dir = os.getcwd()
