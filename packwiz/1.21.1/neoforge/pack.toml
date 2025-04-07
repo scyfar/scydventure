@@ -1,13 +1,13 @@
 name = "Scydventure"
 author = "scyfar"
-version = "0.1.1-beta_1.21.1_neoforge"
+version = "NEXT_1.21.1_neoforge"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ff5021210f8d2979dc2b4044abe65cb9e432704b686cea1525990a407067d75a"
+hash = "01472122051c4ed8340641b04b9f7ca92afe245554a36e33e4b8f00f71865739"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.143"
+neoforge = "21.1.145"

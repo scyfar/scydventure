@@ -255,6 +255,9 @@
     "url": "https://modrinth.com/mod/enchantment-descriptions"
   },
   {
+    "url": "https://modrinth.com/mod/exline-villager-leads"
+  },
+  {
     "url": "https://modrinth.com/mod/explorers-compass"
   },
   {
@@ -342,14 +345,6 @@
   {
     "dependencies": [
       {
-        "url": "https://modrinth.com/mod/puzzles-lib"
-      }
-    ],
-    "url": "https://modrinth.com/mod/leaves-be-gone"
-  },
-  {
-    "dependencies": [
-      {
         "url": "https://modrinth.com/mod/iceberg"
       },
       {
@@ -407,9 +402,6 @@
     "url": "https://modrinth.com/mod/natures-compass"
   },
   {
-    "url": "https://modrinth.com/datapack/neoenchant"
-  },
-  {
     "dependencies": [
       {
         "url": "https://modrinth.com/mod/balm"
@@ -422,6 +414,14 @@
   },
   {
     "url": "https://modrinth.com/mod/not-enough-animations"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/collective"
+      }
+    ],
+    "url": "https://modrinth.com/mod/ore-harvester"
   },
   {
     "url": "https://modrinth.com/mod/pipez"
@@ -563,6 +563,14 @@
       }
     ],
     "url": "https://modrinth.com/mod/trashslot"
+  },
+  {
+    "dependencies": [
+      {
+        "url": "https://modrinth.com/mod/collective"
+      }
+    ],
+    "url": "https://modrinth.com/mod/tree-harvester"
   },
   {
     "dependencies": [
