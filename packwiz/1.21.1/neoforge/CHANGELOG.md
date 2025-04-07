@@ -1,8 +1,8 @@
 # Scydventure - Changelog
 
-<!-- BEGIN NEXT_1.21.1_neoforge -->
+<!-- BEGIN 0.2.0-beta_1.21.1_neoforge -->
 
-## What's Changed (`NEXT_1.21.1_neoforge`)
+## What's Changed (`0.2.0-beta_1.21.1_neoforge`)
 
 - The mod [Neo Enchant+](https://modrinth.com/datapack/neoenchant) has been removed. The
   implementation for the enchant effects is too powerful and not configurable.
@@ -27,12 +27,12 @@
 All mods have been updated to their latest version as of 2025-04-07 and NeoForge was updated to
 `21.1.145`.
 
-**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/0.2.0-beta_1.21.1_neoforge
 
 For questions to a particular version, feel free to head over to the
 [respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
 
-<!-- END NEXT_1.21.1_neoforge -->
+<!-- END 0.2.0-beta_1.21.1_neoforge -->
 <!-- BEGIN 0.1.0-beta_1.21.1_neoforge -->
 
 ## What's Changed (`0.1.0-beta_1.21.1_neoforge`)

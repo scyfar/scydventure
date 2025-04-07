@@ -120,7 +120,7 @@ The following steps must be performed to create a release.
 
    - The `<git_tag>` argument will be the new version and must follow the format
      `<pack-version>_<minecraft-version>_<loader-name>`
-   - The `<new_draft_version>` is the version that will be set for the next iteration
+   - The optional `<new_draft_version>` is the version that will be set for the next iteration
 
 > [!NOTE]
 > The release type is determined from the Git tag name.
