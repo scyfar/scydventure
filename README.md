@@ -36,13 +36,12 @@ The pack does not ship with resource packs but enables any built-in ones from th
 If an `options.txt` exists prior to installing the modpack, the resource packs must be manually
 enabled.
 
-It also does not provide any shaders. The [Iris Shaders](https://modrinth.com/mod/iris) mod is
-included in the pack. Shaders can be added as needed.
+It also does not provide any shaders.
 
 # Attribution
 
 Thanks to all the mod, library and tool developers who make Scydventure possible.
-A special shoutout to the ones providing software [used for this modpack](ATTRIBUTION.md).
+A special shout-out to the ones providing software [used for this modpack](ATTRIBUTION.md).
 
 # Contributing
 
