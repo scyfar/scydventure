@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4c0d361905fc3299dfa44dfae6a7a0d614e9948a6efe4b663aab15b5fa95322e"
+hash = "9b7bd50a0303950620e444509b3e93026f798d953fe37a6b55fdb2222c4eb410"
 
 [[files]]
 file = "config/actuallyharvest-common.toml"
@@ -170,19 +170,15 @@ hash = "d35989de1930dee65145b79e1a1567f00b01e3f43fd392650b9a87fa48bdaaef"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/de_de.json"
-hash = "74e284915dacec1a45d88ab58ab0d7cd5ae18ef797413bb75920ea4aef829624"
+hash = "b9a0e9c4e2817cc68c430445c7d9ddc930e02303777083ef91481e8cc912b395"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "7fb37ce83c7ac98af90ab37c6aeb156d4729a01132d73c81f6126fec965e3422"
+hash = "c056ccca4c8bb978f9972b9514ad717fa5bd1ad43c548555c85787f238d2afb3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/dark_netherite_upgrade_smithing_template.png"
 hash = "b616cfeee4f9595a0b66b72f0cc06df62d06b382afe52582b73a62d828148a2d"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/manta_ray_skin.png"
-hash = "d9070ccfd82f7d081129926f9faf2fe164137194ae8a2e0f72d0f632a925078d"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/resonarium_smithing_template.png"
@@ -217,10 +213,6 @@ file = "kubejs/server_scripts/fix_deeper_darker_resonarium.js"
 hash = "0176c267f0ec3a7d80cdc8d99921bfcaaefb829bcb9206e8838fbc853e978658"
 
 [[files]]
-file = "kubejs/server_scripts/manta_ray_skin_living_things.js"
-hash = "82d7119008eac380afdd48339ea84e3320de36e52538b52aa47ba9a1e47dcf8a"
-
-[[files]]
 file = "kubejs/server_scripts/remove_immersive_aircraft_weapons.js"
 hash = "68b93b9549aef3fb7061e0840bbd4da5efbd0fd81ba80bb833f4e0c7140ef38e"
 
@@ -235,10 +227,6 @@ hash = "0ac08cfd101b20458f73e665943bcc783341c4eed880728b781493faf904ae96"
 [[files]]
 file = "kubejs/startup_scripts/advanced_netherite_deeper_darker.js"
 hash = "2971ad341b62b97b725b619390f8400e7e02955e1773adc86563acfe3bad62d6"
-
-[[files]]
-file = "kubejs/startup_scripts/manta_ray_skin_living_things.js"
-hash = "13896b0c2bfd404874b1ff32d58d4e3db8274619f5fbe4bb6b45340f2aeae88a"
 
 [[files]]
 file = "kubejs/startup_scripts/resonarium_smithing_template.js"
@@ -276,7 +264,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "39fa4b2a7a974569a211e96ca6f100454f15084c4e96200b3d9c304b6c172c75"
+hash = "c6b315c304eb1a3398b44faae2cc2fa42395cf88bc9dea348534f3c1e2924c4e"
 metafile = true
 
 [[files]]
@@ -321,7 +309,7 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf-lib.pw.toml"
-hash = "aa36f13a66eefe87cbe72bb189199bca4963d50d49d7415d9033a5930f10d365"
+hash = "ea7f3fea63f75705daf905b6f3633a0aff7ce82596c2da282d5c12908b649b6a"
 metafile = true
 
 [[files]]
@@ -361,7 +349,7 @@ metafile = true
 
 [[files]]
 file = "mods/clientsort.pw.toml"
-hash = "1e35659b538887b310477e8581c8fbcec93b407c1b9ba04a7c8c05d060a33eb7"
+hash = "7a9c14b15eeb94e0741deff0fa9313a519691fd0f0a4294cb48c7b80b5643dd5"
 metafile = true
 
 [[files]]
@@ -416,7 +404,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "685ec152243e99df71bd8d7f0a6a5c1e0c080acae1527822763ac702ca378827"
+hash = "1e2db95b596dc6b01af99b03e018a3a8280639bf4e8dfc8ba0b19f471f58f8bf"
 metafile = true
 
 [[files]]
@@ -506,7 +494,7 @@ metafile = true
 
 [[files]]
 file = "mods/fzzy-config.pw.toml"
-hash = "a776c401931a2dbf1fafc0e17c88254d9e6f648ac4b01f2d76d26f1e607d5a7d"
+hash = "8e5da360e375437a904021af1e7eda56fa14f1d68af363f3b6217763c63d3544"
 metafile = true
 
 [[files]]
@@ -566,7 +554,7 @@ metafile = true
 
 [[files]]
 file = "mods/legendary-tooltips.pw.toml"
-hash = "21836d119720b99045a5b5be576b5c94618fb3715471e0818cd09bf35f3d38d7"
+hash = "9ca14134538c66b6d8ef74107f6b15ba9487ec632d984427e84ad38aa47afa60"
 metafile = true
 
 [[files]]
@@ -726,17 +714,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "f54472e9b4ec51ea6c1e0bd76ec12f04c14811b8862f8f51544923c48e6a6c07"
+hash = "c9506fc18c61224ad8fb946c5653c42ef8dc869f1c047ed3ffcda7a9ce28b5de"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "d34eb22327953a0488d6f98e71a8266848a720034e298e7d2a5d4fd656129eed"
+hash = "185c9e14a2f050062dbc7adba0190810ad3cb3aa9c62088ea8544ecadcc103b4"
 metafile = true
 
 [[files]]
 file = "mods/sound.pw.toml"
-hash = "47766591a95d95ae6b58d45a44a8b6a30db22002098962829e52083bc3708482"
+hash = "9fd8a776007787ce2f9015d2371abf3891b7cc070ba10f233205548ebc6dd82a"
 metafile = true
 
 [[files]]
@@ -776,7 +764,7 @@ metafile = true
 
 [[files]]
 file = "mods/toms-storage.pw.toml"
-hash = "3392d27cd63afd5a0aa9ece981f12a95bcd4c7852e35be66724fb4d113b1d9aa"
+hash = "33eba62d133ca3ba2113c1cc8a100667ad81c46d5efb9dbb1fdf8f0f57be4393"
 metafile = true
 
 [[files]]
@@ -806,7 +794,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "0b7e4f9e76ad96ec2f59e05c3b72909960bd22ea8ff97178e6a9293760d003c7"
+hash = "3d888e92caa63fa0937f5643e59bf5497fddbaa7ccd665279258bea96c1ba19d"
 metafile = true
 
 [[files]]

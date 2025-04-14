@@ -1,8 +1,8 @@
 # Scydventure - Changelog
 
-<!-- BEGIN NEXT_1.21.1_neoforge -->
+<!-- BEGIN 1.0.0_1.21.1_neoforge -->
 
-## What's Changed (`NEXT_1.21.1_neoforge`)
+## What's Changed (`1.0.0_1.21.1_neoforge`)
 
 - Custom manta ray skin was removed again due to issues between LootJS and JER.
   This was introduced to make the resonarium gear more accessible. But with all provided tools it
@@ -12,12 +12,15 @@
   shaders, making the mod potentially useless to load. It can easily be added manually if shaders
   are desired (much like resource packs).
 
-**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+All mods have been updated to their latest version as of 2025-04-14 and NeoForge was updated to
+`21.1.147`.
+
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/1.0.0_1.21.1_neoforge
 
 For questions to a particular version, feel free to head over to the
 [respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
 
-<!-- END NEXT_1.21.1_neoforge -->
+<!-- END 1.0.0_1.21.1_neoforge -->
 <!-- BEGIN 0.2.0-beta_1.21.1_neoforge -->
 
 ## What's Changed (`0.2.0-beta_1.21.1_neoforge`)
