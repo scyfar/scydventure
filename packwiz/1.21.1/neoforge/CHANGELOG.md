@@ -1,5 +1,23 @@
 # Scydventure - Changelog
 
+<!-- BEGIN NEXT_1.21.1_neoforge -->
+
+## What's Changed (`NEXT_1.21.1_neoforge`)
+
+- Custom manta ray skin was removed again due to issues between LootJS and JER.
+  This was introduced to make the resonarium gear more accessible. But with all provided tools it
+  is not necessary anyway, since the scutes can be found using the Natures Compass and the Biplane.
+
+- The mod [Iris Shaders](https://modrinth.com/mod/iris) was removed as Scydventure does not provide
+  shaders, making the mod potentially useless to load. It can easily be added manually if shaders
+  are desired (much like resource packs).
+
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+
+For questions to a particular version, feel free to head over to the
+[respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
+
+<!-- END NEXT_1.21.1_neoforge -->
 <!-- BEGIN 0.2.0-beta_1.21.1_neoforge -->
 
 ## What's Changed (`0.2.0-beta_1.21.1_neoforge`)

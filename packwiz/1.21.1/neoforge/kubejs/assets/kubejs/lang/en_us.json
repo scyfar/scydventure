@@ -11,7 +11,5 @@
   "item.scydventure.resonarium_smithing_template.tooltip.display_name": "Smithing Template",
   "item.scydventure.resonarium_smithing_template.tooltip.description": "Resonarium Template",
   "item.scydventure.resonarium_smithing_template.tooltip.indent_iron_equipment": " Resonarium Equipment",
-  "item.scydventure.resonarium_smithing_template.tooltip.indent_resonarium_plate": " Resonarium Plate",
-
-  "item.scydventure.manta_ray_skin.tooltip.display_name": "Mantaray Skin"
+  "item.scydventure.resonarium_smithing_template.tooltip.indent_resonarium_plate": " Resonarium Plate"
 }

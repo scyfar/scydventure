@@ -11,7 +11,5 @@
   "item.scydventure.resonarium_smithing_template.tooltip.display_name": "Schmiedevorlage",
   "item.scydventure.resonarium_smithing_template.tooltip.description": "Resonariumvorlage",
   "item.scydventure.resonarium_smithing_template.tooltip.indent_iron_equipment": " Resonariumrüstung",
-  "item.scydventure.resonarium_smithing_template.tooltip.indent_resonarium_plate": " Resonariumplatte",
-
-  "item.scydventure.manta_ray_skin.tooltip.display_name": "Mantarochen-Haut"
+  "item.scydventure.resonarium_smithing_template.tooltip.indent_resonarium_plate": " Resonariumplatte"
 }

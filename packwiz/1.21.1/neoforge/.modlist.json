@@ -309,14 +309,6 @@
     "url": "https://modrinth.com/mod/immersive-aircraft"
   },
   {
-    "dependencies": [
-      {
-        "url": "https://modrinth.com/mod/sodium"
-      }
-    ],
-    "url": "https://modrinth.com/mod/iris"
-  },
-  {
     "url": "https://modrinth.com/mod/jade"
   },
   {
