@@ -1,5 +1,20 @@
 # Scydventure - Changelog
 
+<!-- BEGIN NEXT_1.21.1_neoforge -->
+
+## What's Changed (`NEXT_1.21.1_neoforge`)
+
+- The mods [Waystones](https://modrinth.com/mod/waystones/version/21.1.17+neoforge-1.21.1) and
+  [Balm](https://modrinth.com/mod/balm/version/21.0.41+neoforge-1.21.1) were updated since the
+  waystone generation was broken. With this update the generation of waystones in villages has been
+  disabled. Waystones can be crafted and found in the wild.
+
+**Technical Changelog**: https://github.com/scyfar/scydventure/releases/tag/NEXT_1.21.1_neoforge
+
+For questions to a particular version, feel free to head over to the
+[respective version discussion on GitHub.](https://github.com/scyfar/scydventure/discussions/categories/versions)
+
+<!-- END NEXT_1.21.1_neoforge -->
 <!-- BEGIN 1.0.0_1.21.1_neoforge -->
 
 ## What's Changed (`1.0.0_1.21.1_neoforge`)
